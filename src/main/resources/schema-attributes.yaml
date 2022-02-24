@@ -1,0 +1,2745 @@
+schema:
+  attributes:
+    - name: "{{Address.buildingNumber()}}"
+      enabled: true
+      usage: "{{Address.buildingNumber()}}"
+      examples: "25409"
+      display: "{{Address.buildingNumber()}}"
+      description: "Generate random building number."
+
+    - name: "{{Address.city()}}"
+      enabled: true
+      usage: "{{Address.city()}}"
+      examples: "Elicialand"
+      display: "{{Address.city()}}"
+      description: "Generate random city."
+
+    - name: "{{Address.cityName()}}"
+      enabled: true
+      usage: "{{Address.cityName()}}"
+      examples: "South Coymouth"
+      display: "{{Address.cityName()}}"
+      description: "Generate random city name."
+
+    - name: "{{Address.cityPrefix()}}"
+      enabled: true
+      usage: "{{Address.cityPrefix()}}"
+      examples: "East"
+      display: "{{Address.cityPrefix()}}"
+      description: "Generate random city prefix."
+
+    - name: "{{Address.citySuffix()}}"
+      enabled: true
+      usage: "{{Address.citySuffix()}}"
+      examples: "borough"
+      display: "{{Address.citySuffix()}}"
+      description: "Generate random city suffix."
+
+    - name: "{{Address.country()}}"
+      enabled: true
+      usage: "{{Address.country()}}"
+      examples: "Malawi"
+      display: "{{Address.country()}}"
+      description: "Generate random country."
+
+    - name: "{{Address.countryCode()}}"
+      enabled: true
+      usage: "{{Address.countryCode()}}"
+      examples: "BD"
+      display: "{{Address.countryCode()}}"
+      description: "Generate random country code."
+
+    - name: "{{Address.countyByZipCode(string)}}"
+      enabled: true
+      usage: "{{Address.countyByZipCode(02478)}}"
+      examples: "MiddleSex"
+      display: "{{Address.countyByZipCode(postCode: string)}}"
+      description: "Generate county based on zipcode(type: string) passed."
+
+    - name: "{{Address.firstName()}}"
+      enabled: true
+      usage: "{{Address.firstName()}}"
+      examples: "Rubin"
+      display: "{{Address.firstName()}}"
+      description: "Generate random first name."
+
+    - name: "{{Address.fullAddress()}}"
+      enabled: true
+      usage: "{{Address.fullAddress()}}"
+      examples: "795 Mildred Underpass, Barneymouth, NC 85475-3676"
+      display: "{{Address.fullAddress()}}"
+      description: "Generate random full address."
+
+    - name: "{{Address.lastName()}}"
+      enabled: true
+      usage: "{{Address.lastName()}}"
+      examples: "Hodkiewicz"
+      display: "{{Address.lastName()}}"
+      description: "Generate random last name."
+
+    - name: "{{Address.latitude()}}"
+      enabled: true
+      usage: "{{Address.latitude()}}"
+      examples: "44.733194"
+      display: "{{Address.latitude()}}"
+      description: "Generate random latitude."
+
+    - name: "{{Address.longitude()}}"
+      enabled: true
+      usage: "{{Address.longitude()}}"
+      examples: "132.68206"
+      display: "{{Address.longitude()}}"
+      description: "Generate random longitude."
+
+    - name: "{{Address.secondaryAddress()}}"
+      enabled: true
+      usage: "{{Address.secondaryAddress()}}"
+      examples: "Apt. 428"
+      display: "{{Address.secondaryAddress()}}"
+      description: "Generate random secondary address."
+
+    - name: "{{Address.state()}}"
+      enabled: true
+      usage: "{{Address.state()}}"
+      examples: "Nevada"
+      display: "{{Address.state()}}"
+      description: "Generate random state."
+
+    - name: "{{Address.stateAbbr()}}"
+      enabled: true
+      usage: "{{Address.stateAbbr()}}"
+      examples: "MD"
+      display: "{{Address.stateAbbr()}}"
+      description: "Generate random state abbreviation."
+
+    - name: "{{Address.streetAddress()}}"
+      enabled: true
+      usage: "{{Address.streetAddress()}}"
+      examples: "796 Rick Plains"
+      display: "{{Address.streetAddress()}}"
+      description: "Generate random street address."
+
+    - name: "{{Address.streetAddress(boolean)}}"
+      enabled: true
+      usage: "{{Address.streetAddress(true)}}"
+      examples: "07750 Thompson Circles, Suite 861"
+      display: "{{Address.streetAddress(includeSecondary: boolean)}}"
+      description: "Generate street address with secondary address based on includeSecondary(type: boolean) passed."
+
+    - name: "{{Address.streetAddressNumber()}}"
+      enabled: true
+      usage: "{{Address.streetAddressNumber()}}"
+      examples: "498"
+      display: "{{Address.streetAddressNumber()}}"
+      description: "Generate random stress address number."
+
+    - name: "{{Address.streetName()}}"
+      enabled: true
+      usage: "{{Address.streetName()}}"
+      examples: "Julieta Drive"
+      display: "{{Address.streetName()}}"
+      description: "Generate random street name."
+
+    - name: "{{Address.streetPrefix()}}"
+      enabled: true
+      usage: "{{Address.streetPrefix()}}"
+      examples: "xx"
+      display: "{{Address.streetPrefix()}}"
+      description: "Generate random street prefix."
+
+    - name: "{{Address.streetSuffix()}}"
+      enabled: true
+      usage: "{{Address.streetSuffix()}}"
+      examples: "furt"
+      display: "{{Address.streetSuffix()}}"
+      description: "Generate random street suffix."
+
+    - name: "{{Address.timeZone()}}"
+      enabled: true
+      usage: "{{Address.timeZone()}}"
+      examples: "Asia/Kamchatka"
+      display: "{{Address.timeZone()}}"
+      description: "Generate random timezone."
+
+    - name: "{{Address.zipCode()}}"
+      enabled: true
+      usage: "{{Address.zipCode()}}"
+      examples: "36307"
+      display: "{{Address.zipCode()}}"
+      description: "Generate random zipcode."
+
+    - name: "{{Address.zipCodeByState(string)}}"
+      enabled: true
+      usage: "{{Address.zipCodeByState('MA')}}"
+      examples: "02478"
+      display: "{{Address.zipCodeByState(stateAbbr: string)}}"
+      description: "Generate zipcode based on stateAbbr(type: string) passed."
+
+    - name: "{{Ancient.god()}}"
+      enabled: true
+      usage: "{{Ancient.god()}}"
+      examples: "Hephaestus"
+      display: "{{Ancient.god()}}"
+      description: "Generate random ancient god."
+
+    - name: "{{Ancient.hero()}}"
+      enabled: true
+      usage: "{{Ancient.hero()}}"
+      examples: "Pandion"
+      display: "{{Ancient.hero()}}"
+      description: "Generate random ancient hero."
+
+    - name: "{{Ancient.primordial()}}"
+      enabled: true
+      usage: "{{Ancient.primordial()}}"
+      examples: "Hypnos"
+      display: "{{Ancient.primordial()}}"
+      description: "Generate random ancient primordial.(https://www.merriam-webster.com/dictionary/primordial)"
+
+    - name: "{{Ancient.titan()}}"
+      enabled: true
+      usage: "{{Ancient.titan()}}"
+      examples: "Eurybia"
+      display: "{{Ancient.titan()}}"
+      description: "Generate random ancient titan."
+
+    - name: "{{Animal.name()}}"
+      enabled: true
+      usage: "{{Animal.name()}}"
+      examples: "wallaby"
+      display: "{{Animal.name()}}"
+      description: "Generate random animal name."
+
+    - name: "{{App.author()}}"
+      enabled: true
+      usage: "{{App.author()}}"
+      examples: "Buckridge-Stiedemann"
+      display: "{{App.author()}}"
+      description: "Generate random app author."
+
+    - name: "{{App.name()}}"
+      enabled: true
+      usage: "{{App.name()}}"
+      examples: "Bytecard"
+      display: "{{App.name()}}"
+      description: "Generate random app name."
+
+    - name: "{{App.version()}}"
+      enabled: true
+      usage: "{{App.version()}}"
+      examples: "5.0"
+      display: "{{App.version()}}"
+      description: "Generate random app version"
+
+    - name: "{{AquaTeenHungerForce.character()}}"
+      enabled: true
+      usage: "{{AquaTeenHungerForce.character()}}"
+      examples: "Dr. Weird"
+      display: "{{AquaTeenHungerForce.character()}}"
+      description: "Generate random character from Aqua teen hunger force.(https://en.wikipedia.org/wiki/Aqua_Teen_Hunger_Force)"
+
+    - name: "{{Artist.name()}}"
+      enabled: true
+      usage: "{{Artist.name()}}"
+      examples: "Pissarro"
+      display: "{{Artist.name()}}"
+      description: "Generate random artist name"
+
+    - name: "{{Avatar.image()}}"
+      enabled: true
+      usage: "{{Avatar.image()}}"
+      examples: "https://s3.amazonaws.com/uifaces/faces/twitter/jpscribbles/128.jpg"
+      display: "{{Avatar.image()}}"
+      description: "Generate random image for an internet avatar.(https://en.wikipedia.org/wiki/Avatar_(computing))"
+
+    - name: "{{Aviation.METAR()}}"
+      enabled: true
+      usage: "{{Aviation.METAR()}}"
+      examples: "METAR: SCIP 011500Z 33009KT 9999 SCT020 20/17 Q1016 NOSIG"
+      display: "{{Aviation.METAR()}}"
+      description: "Generate random METAR code.(https://en.wikipedia.org/wiki/METAR)"
+
+    - name: "{{Aviation.aircraft()}}"
+      enabled: true
+      usage: "{{Aviation.aircraft()}}"
+      examples: "Boeing 727"
+      display: "{{Aviation.aircraft()}}"
+      description: "Generate random aircraft name/model/make."
+
+    - name: "{{Aviation.airport()}}"
+      enabled: true
+      usage: "{{Aviation.airport()}}"
+      examples: "TDPD"
+      display: "{{Aviation.airport()}}"
+      description: "Generate random airport name.(https://en.wikipedia.org/wiki/List_of_airports_by_ICAO_code:_A)"
+
+    - name: "{{BackToTheFuture.character()}}"
+      enabled: true
+      usage: "{{BackToTheFuture.character()}}"
+      examples: "Mark Dixon"
+      display: "{{BackToTheFuture.character()}}"
+      description: "Generate random character from back to the future.(https://en.wikipedia.org/wiki/Back_to_the_Future)"
+
+    - name: "{{BackToTheFuture.date()}}"
+      enabled: true
+      usage: "{{BackToTheFuture.date()}}"
+      examples: "November 12, 1955"
+      display: "{{BackToTheFuture.date()}}"
+      description: "Generate random date from back to the future.(https://en.wikipedia.org/wiki/Back_to_the_Future)"
+
+    - name: "{{BackToTheFuture.quote()}}"
+      enabled: true
+      usage: "{{BackToTheFuture.quote()}}"
+      examples: "We're the, uh... We're the Pinheads."
+      display: "{{BackToTheFuture.quote()}}"
+      description: "Generate random quote from back to the future.(https://en.wikipedia.org/wiki/Back_to_the_Future)"
+
+    - name: "{{Beer.hop()}}"
+      enabled: true
+      usage: "{{Beer.hop()}}"
+      examples: "Nugget"
+      display: "{{Beer.hop()}}"
+      description: "Generate random beer hop."
+
+    - name: "{{Beer.malt()}}"
+      enabled: true
+      usage: "{{Beer.malt()}}"
+      examples: "Victory"
+      display: "{{Beer.malt()}}"
+      description: "Generate random beer malt."
+
+    - name: "{{Beer.name()}}"
+      enabled: true
+      usage: "{{Beer.name()}}"
+      examples: "Ruination IPA"
+      display: "{{Beer.name()}}"
+      description: "Generate random beer name."
+
+    - name: "{{Beer.style()}}"
+      enabled: true
+      usage: "{{Beer.style()}}"
+      examples: "Strong Ale"
+      display: "{{Beer.style()}}"
+      description: "Generate random beer style."
+
+    - name: "{{Beer.yeast()}}"
+      enabled: true
+      usage: "{{Beer.yeast()}}"
+      examples: "1084 - Irish Ale"
+      display: "{{Beer.yeast()}}"
+      description: "Generate random beer yeast."
+
+    - name: "{{Book.author()}}"
+      enabled: true
+      usage: "{{Book.author()}}"
+      examples: "Oliver Farrell"
+      display: "{{Book.author()}}"
+      description: "Generate random book author."
+
+    - name: "{{Book.genre()}}"
+      enabled: true
+      usage: "{{Book.genre()}}"
+      examples: "Realistic fiction"
+      display: "{{Book.genre()}}"
+      description: "Generate random book genre."
+
+    - name: "{{Book.publisher()}}"
+      enabled: true
+      usage: "{{Book.publisher()}}"
+      examples: "Cisco Press"
+      display: "{{Book.publisher()}}"
+      description: "Generate random book publisher."
+
+    - name: "{{Book.title()}}"
+      enabled: true
+      usage: "{{Book.title()}}"
+      examples: "A Handful of Dust"
+      display: "{{Book.title()}}"
+      description: "Generate random book title."
+
+    - name: "{{Bool.bool()}}"
+      enabled: true
+      usage: "{{Bool.bool()}}"
+      examples: "true"
+      display: "{{Bool.bool()}}"
+      description: "Generate random bool value."
+
+    - name: "{{Buffy.bigBads()}}"
+      enabled: true
+      usage: "{{Buffy.bigBads()}}"
+      examples: "Dark Willow"
+      display: "{{Buffy.bigBads()}}"
+      description: "Generate random big bads from Buffy.(https://en.wikipedia.org/wiki/Buffy_the_Vampire_Slayer)"
+
+    - name: "{{Buffy.celebrities()}}"
+      enabled: true
+      usage: "{{Buffy.celebrities()}}"
+      examples: "Kal Penn"
+      display: "{{Buffy.celebrities()}}"
+      description: "Generate random celebrities from Buffy.(https://en.wikipedia.org/wiki/Buffy_the_Vampire_Slayer)"
+
+    - name: "{{Buffy.characters()}}"
+      enabled: true
+      usage: "{{Buffy.characters()}}"
+      examples: "Oz"
+      display: "{{Buffy.characters()}}"
+      description: "Generate random characters from Buffy.(https://en.wikipedia.org/wiki/Buffy_the_Vampire_Slayer)"
+
+    - name: "{{Buffy.episodes()}}"
+      enabled: true
+      usage: "{{Buffy.episodes()}}"
+      examples: "Primeval"
+      display: "{{Buffy.episodes()}}"
+      description: "Generate random episodes from Buffy.(https://en.wikipedia.org/wiki/Buffy_the_Vampire_Slayer)"
+
+    - name: "{{Buffy.quotes()}}"
+      enabled: true
+      usage: "{{Buffy.quotes()}}"
+      examples: "Oh, I don't know. Looking in the mirror every day and seeing nothing there...it's an overrated pleasure."
+      display: "{{Buffy.quotes()}}"
+      description: "Generate random quotes from Buffy.(https://en.wikipedia.org/wiki/Buffy_the_Vampire_Slayer)"
+
+    - name: "{{Business.creditCardExpiry()}}"
+      enabled: true
+      usage: "{{Business.creditCardExpiry()}}"
+      examples: "2013-9-12"
+      display: "{{Business.creditCardExpiry()}}"
+      description: "Generate random credit card expiry."
+
+    - name: "{{Business.creditCardNumber()}}"
+      enabled: true
+      usage: "{{Business.creditCardNumber()}}"
+      examples: "1211-1221-1234-2201"
+      display: "{{Business.creditCardNumber()}}"
+      description: "Generate random credit card number."
+
+    - name: "{{Business.creditCardType()}}"
+      enabled: true
+      usage: "{{Business.creditCardType()}}"
+      examples: "mastercard"
+      display: "{{Business.creditCardType()}}"
+      description: "Generate random credit card type."
+
+    - name: "{{Cat.breed()}}"
+      enabled: true
+      usage: "{{Cat.breed()}}"
+      examples: "Korat"
+      display: "{{Cat.breed()}}"
+      description: "Generate random cat breed."
+
+    - name: "{{Cat.name()}}"
+      enabled: true
+      usage: "{{Cat.name()}}"
+      examples: "Smokey"
+      display: "{{Cat.name()}}"
+      description: "Generate random cat name."
+
+    - name: "{{Cat.registry()}}"
+      enabled: true
+      usage: "{{Cat.registry()}}"
+      examples: "Felis Britannica"
+      display: "{{Cat.registry()}}"
+      description: "Generate random cat registry."
+
+    - name: "{{ChuckNorris.fact()}}"
+      enabled: true
+      usage: "{{ChuckNorris.fact()}}"
+      examples: "Chuck Norris programs do not accept input."
+      display: "{{ChuckNorris.fact()}}"
+      description: "Generate random Chuck Norris fact.(https://en.wikipedia.org/wiki/Chuck_Norris)"
+
+    - name: "{{Code.asin()}}"
+      enabled: true
+      usage: "{{Code.asin()}}"
+      examples: "B000662ADI"
+      display: "{{Code.asin()}}"
+      description: "Generate random Amazon Standard Identification Number (ASIN)."
+
+    - name: "{{Code.ean13()}}"
+      enabled: true
+      usage: "{{Code.ean13()}}"
+      examples: "3009503496331"
+      display: "{{Code.ean13()}}"
+      description: "Generate random 13 digit European Article Number(EAN)."
+
+    - name: "{{Code.ean8()}}"
+      enabled: true
+      usage: "{{Code.ean8()}}"
+      examples: "66644903"
+      display: "{{Code.ean8()}}"
+      description: "Generate random 8 digit European Article Number(EAN)."
+
+    - name: "{{Code.gtin13()}}"
+      enabled: true
+      usage: "{{Code.gtin13()}}"
+      examples: "7127780525332"
+      display: "{{Code.gtin13()}}"
+      description: "Generate random 13 digit Global Trade Item Number (GTIN)."
+
+    - name: "{{Code.gtin8()}}"
+      enabled: true
+      usage: "{{Code.gtin8()}}"
+      examples: "66644903"
+      display: "{{Code.gtin8()}}"
+      description: "Generate random 8 digit Global Trade Item Number (GTIN)."
+
+    - name: "{{Code.imei()}}"
+      enabled: true
+      usage: "{{Code.imei()}}"
+      examples: "510873775158515"
+      display: "{{Code.imei()}}"
+      description: "Generate random International Mobile Equipment Identity (IMEI)."
+
+    - name: "{{Code.isbn10()}}"
+      enabled: true
+      usage: "{{Code.isbn10()}}"
+      examples: "1909975230"
+      display: "{{Code.isbn10()}}"
+      description: "Generate random 10 digit International Standard Book Number (ISBN)."
+
+    - name: "{{Code.isbn10(boolean)}}"
+      enabled: true
+      usage: "{{Code.isbn10(false)}}"
+      examples: "1909975230"
+      display: "{{Code.isbn10(separator: boolean)}}"
+      description: "Generate random 10 digit International Standard Book Number (ISBN) based on separator(type: boolean) passed."
+
+    - name: "{{Code.isbn13()}}"
+      enabled: true
+      usage: "{{Code.isbn13()}}"
+      examples: "9781052406231"
+      display: "{{Code.isbn13()}}"
+      description: "Generate random 13 digit International Standard Book Number (ISBN)."
+
+    - name: "{{Code.isbn13(boolean)}}"
+      enabled: true
+      usage: "{{Code.isbn13(false)}}"
+      examples: "9781052406231"
+      display: "{{Code.isbn13(separator: boolean)}}"
+      description: "Generate random 13 digit International Standard Book Number (ISBN) based on separator(type: boolean) passed."
+
+    - name: "{{Code.isbnGroup()}}"
+      enabled: true
+      usage: "{{Code.isbnGroup()}}"
+      examples: "1"
+      display: "{{Code.isbnGroup()}}"
+      description: "Generate random International Standard Book Number (ISBN) group."
+
+    - name: "{{Code.isbnGs1()}}"
+      enabled: true
+      usage: "{{Code.isbnGs1()}}"
+      examples: "979"
+      display: "{{Code.isbnGs1()}}"
+      description: "Generate random International Standard Book Number (ISBN) by GS1."
+
+    - name: "{{Code.isbnRegistrant()}}"
+      enabled: true
+      usage: "{{Code.isbnRegistrant()}}"
+      examples: "07-033571"
+      display: "{{Code.isbnRegistrant()}}"
+      description: "Generate random International Standard Book Number (ISBN) registrant."
+
+    - name: "{{Color.hex()}}"
+      enabled: true
+      usage: "{{Color.hex()}}"
+      examples: "#08FCAF"
+      display: "{{Color.hex()}}"
+      description: "Generate random hex value of color."
+
+    - name: "{{Color.hex(boolean)}}"
+      enabled: true
+      usage: "{{Color.hex(true)}}"
+      examples: "#08FCAF"
+      display: "{{Color.hex(includeHashSign: boolean)}}"
+      description: "Generate random hex value of color based on includeHashSign(type: boolean) passed."
+
+    - name: "{{Color.name()}}"
+      enabled: true
+      usage: "{{Color.name()}}"
+      examples: "red"
+      display: "{{Color.name()}}"
+      description: "Generate random color name."
+
+    - name: "{{Commerce.color()}}"
+      enabled: true
+      usage: "{{Commerce.color()}}"
+      examples: "purple"
+      display: "{{Commerce.color()}}"
+      description: "Generate random color"
+
+    - name: "{{Commerce.department()}}"
+      enabled: true
+      usage: "{{Commerce.department()}}"
+      examples: "Computers"
+      display: "{{Commerce.department()}}"
+      description: "Generate random department"
+
+    - name: "{{Commerce.material()}}"
+      enabled: true
+      usage: "{{Commerce.material()}}"
+      examples: "Steel"
+      display: "{{Commerce.material()}}"
+      description: "Generate random material"
+
+    - name: "{{Commerce.price()}}"
+      enabled: true
+      usage: "{{Commerce.price()}}"
+      examples: "0.25"
+      display: "{{Commerce.price()}}"
+      description: "Generate random price"
+
+    - name: "{{Commerce.price(double, double)}}"
+      enabled: true
+      usage: "{{Commerce.price(0.20, 0.30)}}"
+      examples: "0.26"
+      display: "{{Commerce.price(min: double,max: double)}}"
+      description: "Generate random price based on min(type: double) and max(type: double) passed."
+
+    - name: "{{Commerce.productName()}}"
+      enabled: true
+      usage: "{{Commerce.productName()}}"
+      examples: "Incredible Cotton Bench"
+      display: "{{Commerce.productName()}}"
+      description: "Generate random product name."
+
+    - name: "{{Commerce.promotionCode()}}"
+      enabled: true
+      usage: "{{Commerce.promotionCode()}}"
+      examples: "GreatPrice049636"
+      display: "{{Commerce.promotionCode()}}"
+      description: "Generate random promotion code."
+
+    - name: "{{Commerce.promotionCode(int)}}"
+      enabled: true
+      usage: "{{Commerce.promotionCode(16)}}"
+      examples: "GreatPrice049636"
+      display: "{{Commerce.promotionCode(digits: int)}}"
+      description: "Generate random promotion code based on digits(type: int) passed."
+
+    - name: "{{Company.bs()}}"
+      enabled: true
+      usage: "{{Company.bs()}}"
+      examples: "productize virtual relationships"
+      display: "{{Company.bs()}}"
+      description: "Generate random company bs."
+
+    - name: "{{Company.buzzword()}}"
+      enabled: true
+      usage: "{{Company.buzzword()}}"
+      examples: "Realigned"
+      display: "{{Company.buzzword()}}"
+      description: "Generate random company buzz word."
+
+    - name: "{{Company.catchPhrase()}}"
+      enabled: true
+      usage: "{{Company.catchPhrase()}}"
+      examples: "Organized asymmetric challenge"
+      display: "{{Company.catchPhrase()}}"
+      description: "Generate random catch phrase."
+
+    - name: "{{Company.industry()}}"
+      enabled: true
+      usage: "{{Company.industry()}}"
+      examples: "Consumer Services"
+      display: "{{Company.industry()}}"
+      description: "Generate random industry."
+
+    - name: "{{Company.logo()}}"
+      enabled: true
+      usage: "{{Company.logo()}}"
+      examples: "https://pigment.github.io/fake-logos/logos/medium/color/1.png"
+      display: "{{Company.logo()}}"
+      description: "Generate random company logo."
+
+    - name: "{{Company.name()}}"
+      enabled: true
+      usage: "{{Company.name()}}"
+      examples: "Walsh LLC"
+      display: "{{Company.name()}}"
+      description: "Generate random company name."
+
+    - name: "{{Company.profession()}}"
+      enabled: true
+      usage: "{{Company.profession()}}"
+      examples: "engineer"
+      display: "{{Company.profession()}}"
+      description: "Generate random company profession."
+
+    - name: "{{Company.suffix()}}"
+      enabled: true
+      usage: "{{Company.suffix()}}"
+      examples: "LLC"
+      display: "{{Company.suffix()}}"
+      description: "Generate random company suffix."
+
+    - name: "{{Company.url()}}"
+      enabled: true
+      usage: "{{Company.url()}}"
+      examples: "www.ricegleasonandnolan.name"
+      display: "{{Company.url()}}"
+      description: "Generate random company url."
+
+    - name: "{{Country.capital()}}"
+      enabled: true
+      usage: "{{Country.capital()}}"
+      examples: "Paris"
+      display: "{{Country.capital()}}"
+      description: "Generate random country capital."
+
+    - name: "{{Country.countryCode2()}}"
+      enabled: true
+      usage: "{{Country.countryCode2()}}"
+      examples: "hu"
+      display: "{{Country.countryCode2()}}"
+      description: "Generate random 2 character country code."
+
+    - name: "{{Country.countryCode3()}}"
+      enabled: true
+      usage: "{{Country.countryCode3()}}"
+      examples: "tun"
+      display: "{{Country.countryCode3()}}"
+      description: "Generate random 3 character country code."
+
+    - name: "{{Country.currency()}}"
+      enabled: true
+      usage: "{{Country.currency()}}"
+      examples: "Norwegian Krone"
+      display: "{{Country.currency()}}"
+      description: "Generate random currency."
+
+    - name: "{{Country.currencyCode()}}"
+      enabled: true
+      usage: "{{Country.currencyCode()}}"
+      examples: "BOV"
+      display: "{{Country.currencyCode()}}"
+      description: "Generate random currency code."
+
+    - name: "{{Country.flag()}}"
+      enabled: true
+      usage: "{{Country.flag()}}"
+      examples: "http://flags.fmcdn.net/data/flags/w580/de.png"
+      display: "{{Country.flag()}}"
+      description: "Generate random country flag."
+
+    - name: "{{Country.name()}}"
+      enabled: true
+      usage: "{{Country.name()}}"
+      examples: "Azerbaijan"
+      display: "{{Country.name()}}"
+      description: "Generate random country name."
+
+    - name: "{{Crypto.md5()}}"
+      enabled: true
+      usage: "{{Crypto.md5()}}"
+      examples: "8a901d7287bad6acc2d7b39aef010fe0"
+      display: "{{Crypto.md5()}}"
+      description: "Generate random MD5 hash."
+
+    - name: "{{Crypto.sha1()}}"
+      enabled: true
+      usage: "{{Crypto.sha1()}}"
+      examples: "1e46e9485b27c38baca26545bf9261b79545236"
+      display: "{{Crypto.sha1()}}"
+      description: "Generate random SHA1 hash."
+
+    - name: "{{Crypto.sha256()}}"
+      enabled: true
+      usage: "{{Crypto.sha256()}}"
+      examples: "dc664f865eb547e8e6d5cc667f4e997b57c142d9451cc444d9aeaa36d5e547d"
+      display: "{{Crypto.sha256()}}"
+      description: "Generate random SHA256 hash."
+
+    - name: "{{Crypto.sha512()}}"
+      enabled: true
+      usage: "{{Crypto.sha512()}}"
+      examples: "81c1eb00683a1d6d16fb865e7ee6588bdc703590f092d2492f53b59262473fbd911b2a63bf135f12dfe492d3eebbf756c4fee4cae24befc9b16905e6e591b9f2"
+      display: "{{Crypto.sha512()}}"
+      description: "Generate random SHA512 hash."
+
+    - name: "{{Currency.code()}}"
+      enabled: true
+      usage: "{{Currency.code()}}"
+      examples: "MDL"
+      display: "{{Currency.code()}}"
+      description: "Generate random currency code."
+
+    - name: "{{Currency.name()}}"
+      enabled: true
+      usage: "{{Currency.name()}}"
+      examples: "Platinum"
+      display: "{{Currency.name()}}"
+      description: "Generate random currency name."
+
+    - name: "{{Demographic.demonym()}}"
+      enabled: true
+      usage: "{{Demographic.demonym()}}"
+      examples: "Lithuanian"
+      display: "{{Demographic.demonym()}}"
+      description: "Generate random demographic demonym. (More here: https://en.wikipedia.org/wiki/Demonym)"
+
+    - name: "{{Demographic.educationalAttainment()}}"
+      enabled: true
+      usage: "{{Demographic.educationalAttainment()}}"
+      examples: "Master's degree"
+      display: "{{Demographic.educationalAttainment()}}"
+      description: "Generate random demographic educational attainment."
+
+    - name: "{{Demographic.maritalStatus()}}"
+      enabled: true
+      usage: "{{Demographic.maritalStatus()}}"
+      examples: "Never married"
+      display: "{{Demographic.maritalStatus()}}"
+      description: "Generate random demographic martial status."
+
+    - name: "{{Demographic.race()}}"
+      enabled: true
+      usage: "{{Demographic.race()}}"
+      examples: "American Indian or Alaska Native"
+      display: "{{Demographic.race()}}"
+      description: "Generate random demographic race."
+
+    - name: "{{Demographic.sex()}}"
+      enabled: true
+      usage: "{{Demographic.sex()}}"
+      examples: "Female"
+      display: "{{Demographic.sex()}}"
+      description: "Generate random demographic sex."
+
+    - name: "{{Dog.age()}}"
+      enabled: true
+      usage: "{{Dog.age()}}"
+      examples: "puppy"
+      display: "{{Dog.age()}}"
+      description: "Generate random dog age."
+
+    - name: "{{Dog.breed()}}"
+      enabled: true
+      usage: "{{Dog.breed()}}"
+      examples: "Labrador"
+      display: "{{Dog.breed()}}"
+      description: "Generate random dig breed."
+
+    - name: "{{Dog.coatLength()}}"
+      enabled: true
+      usage: "{{Dog.coatLength()}}"
+      examples: "medium"
+      display: "{{Dog.coatLength()}}"
+      description: "Generate random dog coat length."
+
+    - name: "{{Dog.gender()}}"
+      enabled: true
+      usage: "{{Dog.gender()}}"
+      examples: "female"
+      display: "{{Dog.gender()}}"
+      description: "Generate random dog gender."
+
+    - name: "{{Dog.memePhrase()}}"
+      enabled: true
+      usage: "{{Dog.memePhrase()}}"
+      examples: "blep"
+      display: "{{Dog.memePhrase()}}"
+      description: "Generate random dog meme phrase."
+
+    - name: "{{Dog.name()}}"
+      enabled: true
+      usage: "{{Dog.name()}}"
+      examples: "Sadie"
+      display: "{{Dog.name()}}"
+      description: "Generate random dog name."
+
+    - name: "{{Dog.size()}}"
+      enabled: true
+      usage: "{{Dog.size()}}"
+      examples: "large"
+      display: "{{Dog.size()}}"
+      description: "Generate random dog size."
+
+    - name: "{{Dog.sound()}}"
+      enabled: true
+      usage: "{{Dog.sound()}}"
+      examples: "grrrrrr"
+      display: "{{Dog.sound()}}"
+      description: "Generate random dog sound."
+
+    - name: "{{DragonBall.character()}}"
+      enabled: true
+      usage: "{{DragonBall.character()}}"
+      examples: "Su Shenlong"
+      display: "{{DragonBall.character()}}"
+      description: "Generate random character from DragonBall. (More here: https://en.wikipedia.org/wiki/Dragon_Ball)"
+
+    - name: "{{Dune.character()}}"
+      enabled: true
+      usage: "{{Dune.character()}}"
+      examples: "Ilban Richese"
+      display: "{{Dune.character()}}"
+      description: "Generate random character from Dune. (More here: https://en.wikipedia.org/wiki/Dune_(novel))"
+
+    - name: "{{Dune.planet()}}"
+      enabled: true
+      usage: "{{Dune.planet()}}"
+      examples: "Dune"
+      display: "{{Dune.planet()}}"
+      description: "Generate random planet from Dune. (More here: https://en.wikipedia.org/wiki/Dune_(novel))"
+
+    - name: "{{Dune.quote()}}"
+      enabled: true
+      usage: "{{Dune.quote()}}"
+      examples: "I mean Paul Atreides. We want him killed. I did not say this. I am not here."
+      display: "{{Dune.quote()}}"
+      description: "Generate random quote from Dune. (More here: https://en.wikipedia.org/wiki/Dune_(novel))"
+
+    - name: "{{Dune.saying()}}"
+      enabled: true
+      usage: "{{Dune.saying()}}"
+      examples: "Prophets have a way of dying by violence."
+      display: "{{Dune.saying()}}"
+      description: "Generate random saying from Dune. (More here: https://en.wikipedia.org/wiki/Dune_(novel))"
+
+    - name: "{{Dune.title()}}"
+      enabled: true
+      usage: "{{Dune.title()}}"
+      examples: "Envoy"
+      display: "{{Dune.title()}}"
+      description: "Generate random title from Dune. (More here: https://en.wikipedia.org/wiki/Dune_(novel))"
+
+    - name: "{{Educator.campus()}}"
+      enabled: true
+      usage: "{{Educator.campus()}}"
+      examples: "Icelyn Campus"
+      display: "{{Educator.campus()}}"
+      description: "Generate random campus."
+
+    - name: "{{Educator.course()}}"
+      enabled: true
+      usage: "{{Educator.course()}}"
+      examples: "Master of Information Systems"
+      display: "{{Educator.course()}}"
+      description: "Generate random course."
+
+    - name: "{{Educator.secondarySchool()}}"
+      enabled: true
+      usage: "{{Educator.secondarySchool()}}"
+      examples: "Brookville High"
+      display: "{{Educator.secondarySchool()}}"
+      description: "Generate random secondary school."
+
+    - name: "{{Educator.university()}}"
+      enabled: true
+      usage: "{{Educator.university()}}"
+      examples: "Clearcourt Technical College"
+      display: "{{Educator.university()}}"
+      description: "Generate random university."
+
+    - name: "{{ElderScrolls.city()}}"
+      enabled: true
+      usage: "{{ElderScrolls.city()}}"
+      examples: "Rorikstead"
+      display: "{{ElderScrolls.city()}}"
+      description: "Generate random city from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{ElderScrolls.creature()}}"
+      enabled: true
+      usage: "{{ElderScrolls.creature()}}"
+      examples: "Wisp"
+      display: "{{ElderScrolls.creature()}}"
+      description: "Generate random creature from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{ElderScrolls.dragon()}}"
+      enabled: true
+      usage: "{{ElderScrolls.dragon()}}"
+      examples: "Elder Dragon"
+      display: "{{ElderScrolls.dragon()}}"
+      description: "Generate random dragon from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{ElderScrolls.firstName()}}"
+      enabled: true
+      usage: "{{ElderScrolls.firstName()}}"
+      examples: "Dro'marash"
+      display: "{{ElderScrolls.firstName()}}"
+      description: "Generate random first name from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{ElderScrolls.lastName()}}"
+      enabled: true
+      usage: "{{ElderScrolls.lastName()}}"
+      examples: "Lothaire"
+      display: "{{ElderScrolls.lastName()}}"
+      description: "Generate random last name from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{ElderScrolls.quote()}}"
+      enabled: true
+      usage: "{{ElderScrolls.quote()}}"
+      examples: "You impossible fool. What possessed you to think I would suggest a meeting here, of all places?"
+      display: "{{ElderScrolls.quote()}}"
+      description: "Generate random quote from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{ElderScrolls.race()}}"
+      enabled: true
+      usage: "{{ElderScrolls.race()}}"
+      examples: "Imperial"
+      display: "{{ElderScrolls.race()}}"
+      description: "Generate random race from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{ElderScrolls.region()}}"
+      enabled: true
+      usage: "{{ElderScrolls.region()}}"
+      examples: "Elsweyr"
+      display: "{{ElderScrolls.region()}}"
+      description: "Generate random region from The Elder Scrolls. (More here: https://en.wikipedia.org/wiki/The_Elder_Scrolls)"
+
+    - name: "{{Esports.event()}}"
+      enabled: true
+      usage: "{{Esports.event()}}"
+      examples: "League All Stars"
+      display: "{{Esports.event()}}"
+      description: "Generate random e-sport event."
+
+    - name: "{{Esports.game()}}"
+      enabled: true
+      usage: "{{Esports.game()}}"
+      examples: "Super Smash Bros. Melee"
+      display: "{{Esports.game()}}"
+      description: "Generate random e-sport game."
+
+    - name: "{{Esports.league()}}"
+      enabled: true
+      usage: "{{Esports.league()}}"
+      examples: "GFinity"
+      display: "{{Esports.league()}}"
+      description: "Generate random e-sport league."
+
+    - name: "{{Esports.player()}}"
+      enabled: true
+      usage: "{{Esports.player()}}"
+      examples: "Miracle"
+      display: "{{Esports.player()}}"
+      description: "Generate random e-sport player."
+
+    - name: "{{Esports.team()}}"
+      enabled: true
+      usage: "{{Esports.team()}}"
+      examples: "Virtus.Pro"
+      display: "{{Esports.team()}}"
+      description: "Generate random e-sport team."
+
+    - name: "{{Faker.bothify(string)}}"
+      enabled: true
+      usage: "{{Faker.bothify('??##??')}}"
+      examples: "ab12ef"
+      display: "{{Faker.bothify(value: string)}}"
+      description: "Generate random string based on value(type: string) passed and replace # with numbers and ? with alphabets."
+
+    - name: "{{Faker.bothify(string,boolean)}}"
+      enabled: true
+      usage: "{{Faker.bothify('??##??',true)}}"
+      examples: "AB12EF"
+      display: "{{Faker.bothify(value: string,includeUpper: boolean)}}"
+      description: "Generate random string based on value(type: string) and includeUpper(type: boolean) passed and replace # with numbers and ? with alphabets."
+
+    - name: "{{Faker.expression(string)}}"
+      enabled: true
+      usage: "{{Faker.expression(string)}}"
+      examples: "#{regexify '\\.\\*\\?\\+'}"
+      display: "{{Faker.expression(expression: string)}}"
+      description: "Generate random string based on expression(type: string) passed."
+
+    - name: "{{Faker.letterify(string)}}"
+      enabled: true
+      usage: "{{Faker.letterify('12??56')}}"
+      examples: "12ab56"
+      display: "{{Faker.letterify(letterString: string)}}"
+      description: "Generate random string based on value(type: string) passed and replace ? with alphabets."
+
+    - name: "{{Faker.letterify(string,boolean)}}"
+      enabled: true
+      usage: "{{Faker.letterify('12??56',true)}}"
+      examples: "12AB56"
+      display: "{{Faker.letterify(letterString: string,includeUpper: boolean)}}"
+      description: "Generate random string based on value(type: string) and includeUpper(type: boolean) passed and replace ? with alphabets."
+
+    - name: "{{Faker.numerify(string)}}"
+      enabled: true
+      usage: "{{Faker.numerify('AB##EF')}}"
+      examples: "AB12EF"
+      display: "{{Faker.numerify(numberString: string)}}"
+      description: "Generate random string based on value(type: string) passed and replace # with numbers."
+
+    - name: "{{Faker.regexify(string)}}"
+      enabled: true
+      usage: "{{Faker.regexify('[a-zA-Z0-9]')}}"
+      examples: "ajhAE932"
+      display: "{{Faker.regexify(regex: string)}}"
+      description: "Generate random string based on reged(type: string) passed."
+
+    - name: "{{Faker.resolve(string)}}"
+      enabled: false
+      usage: "{{Faker.resolve('stock.symbol_nyse')}}"
+      examples: "MTB^C"
+      display: "{{Faker.resolve(key: string)}}"
+      description: "Generate resolved string based on key(type: string) passed. May result into NPE."
+
+    - name: "{{File.extension()}}"
+      enabled: true
+      usage: "{{File.extension()}}"
+      examples: "jpeg"
+      display: "{{File.extension()}}"
+      description: "Generate random extension of a file."
+
+    - name: "{{File.fileName()}}"
+      enabled: true
+      usage: "{{File.fileName()}}"
+      examples: "eius_consequuntur/assumenda.numbers"
+      display: "{{File.fileName()}}"
+      description: "Generate random name of a file."
+
+    - name: "{{File.fileName(string,string,string,string)}}"
+      enabled: true
+      usage: "{{File.fileName('dir','name','ext','/')}}"
+      examples: "dir/name.ext"
+      display: "{{File.fileName(directory: string,name: string,extension: string,separator: string)}}"
+      description: "Generate random name based on directory(type: string), name(type: string), extension(type: string) and separator(type: string) passed."
+
+    - name: "{{File.mimeType()}}"
+      enabled: true
+      usage: "{{File.mimeType()}}"
+      examples: "multipart/related"
+      display: "{{File.mimeType()}}"
+      description: "Generate random mime type of a file."
+
+    - name: "{{Finance.bic()}}"
+      enabled: true
+      usage: "{{Finance.bic()}}"
+      examples: "RFGEMV05"
+      display: "{{Finance.bic()}}"
+      description: "Generate random bic value. (More here: https://en.wikipedia.org/wiki/Bureau_International_des_Containers)"
+
+    - name: "{{Finance.creditCard()}}"
+      enabled: true
+      usage: "{{Finance.creditCard()}}"
+      examples: "6709152129062154"
+      display: "{{Finance.creditCard()}}"
+      description: "Generate random credit card number."
+
+    - name: "{{Finance.iban()}}"
+      enabled: true
+      usage: "{{Finance.iban()}}"
+      examples: "LI2304641B4jQ373Jc0Y4"
+      display: "{{Finance.iban()}}"
+      description: "Generate random international bank account number. (More here: https://en.wikipedia.org/wiki/International_Bank_Account_Number)"
+
+    - name: "{{Finance.iban(string)}}"
+      enabled: true
+      usage: "{{Finance.iban('US')}}"
+      examples: "VG38BMIZ7188706038083612"
+      display: "{{Finance.iban(countryCode: string)}}"
+      description: "Generate random international bank account number based on countryCode(type: string) passed. (More here: https://en.wikipedia.org/wiki/International_Bank_Account_Number)"
+
+    - name: "{{Food.dish()}}"
+      enabled: true
+      usage: "{{Food.dish()}}"
+      examples: "California Maki"
+      display: "{{Food.dish()}}"
+      description: "Generate random dish."
+
+    - name: "{{Food.fruit()}}"
+      enabled: true
+      usage: "{{Food.fruit()}}"
+      examples: "Longan"
+      display: "{{Food.fruit()}}"
+      description: "Generate random fruit."
+
+    - name: "{{Food.ingredient()}}"
+      enabled: true
+      usage: "{{Food.ingredient()}}"
+      examples: "Asian Greens"
+      display: "{{Food.ingredient()}}"
+      description: "Generate random ingredient."
+
+    - name: "{{Food.measurement()}}"
+      enabled: true
+      usage: "{{Food.measurement()}}"
+      examples: "3 pint"
+      display: "{{Food.measurement()}}"
+      description: "Generate random food measurement."
+
+    - name: "{{Food.spice()}}"
+      enabled: true
+      usage: "{{Food.spice()}}"
+      examples: "Baharat"
+      display: "{{Food.spice()}}"
+      description: "Generate random spice."
+
+    - name: "{{Food.sushi()}}"
+      enabled: true
+      usage: "{{Food.sushi()}}"
+      examples: "Greater amberjack"
+      display: "{{Food.sushi()}}"
+      description: "Generate random sushi."
+
+    - name: "{{Food.vegetable()}}"
+      enabled: true
+      usage: "{{Food.vegetable()}}"
+      examples: "Cabbage"
+      display: "{{Food.vegetable()}}"
+      description: "Generate random vegetable."
+
+    - name: "{{Friends.character()}}"
+      enabled: true
+      usage: "{{Friends.character()}}"
+      examples: "Ben"
+      display: "{{Friends.character()}}"
+      description: "Generate random character from Friends. (More here: https://en.wikipedia.org/wiki/Friends)"
+
+    - name: "{{Friends.location()}}"
+      enabled: true
+      usage: "{{Friends.location()}}"
+      examples: "Central Perk"
+      display: "{{Friends.location()}}"
+      description: "Generate random location from Friends. (More here: https://en.wikipedia.org/wiki/Friends)"
+
+    - name: "{{Friends.quote()}}"
+      enabled: true
+      usage: "{{Friends.quote()}}"
+      examples: "Raspberries? Good. Ladyfingers? Good. Beef? GOOD!"
+      display: "{{Friends.quote()}}"
+      description: "Generate random quote from Friends. (More here: https://en.wikipedia.org/wiki/Friends)"
+
+    - name: "{{FunnyName.name()}}"
+      enabled: true
+      usage: "{{FunnyName.name()}}"
+      examples: "Rosa Shore"
+      display: "{{FunnyName.name()}}"
+      description: "Generate random funny name."
+
+    - name: "{{GameOfThrones.character()}}"
+      enabled: true
+      usage: "{{GameOfThrones.character()}}"
+      examples: "Joseth Mallister"
+      display: "{{GameOfThrones.character()}}"
+      description: "Generate random character from Game of Thrones. (More here: https://en.wikipedia.org/wiki/Game_of_Thrones)"
+
+    - name: "{{GameOfThrones.city()}}"
+      enabled: true
+      usage: "{{GameOfThrones.city()}}"
+      examples: "Myr"
+      display: "{{GameOfThrones.city()}}"
+      description: "Generate random city from Game of Thrones. (More here: https://en.wikipedia.org/wiki/Game_of_Thrones)"
+
+    - name: "{{GameOfThrones.dragon()}}"
+      enabled: true
+      usage: "{{GameOfThrones.dragon()}}"
+      examples: "Valryon"
+      display: "{{GameOfThrones.dragon()}}"
+      description: "Generate random dragon from Game of Thrones. (More here: https://en.wikipedia.org/wiki/Game_of_Thrones)"
+
+    - name: "{{GameOfThrones.house()}}"
+      enabled: true
+      usage: "{{GameOfThrones.house()}}"
+      examples: "Jordayne of the Tor"
+      display: "{{GameOfThrones.house()}}"
+      description: "Generate random house from Game of Thrones. (More here: https://en.wikipedia.org/wiki/Game_of_Thrones)"
+
+    - name: "{{GameOfThrones.quote()}}"
+      enabled: true
+      usage: "{{GameOfThrones.quote()}}"
+      examples: "Some old wounds never truly heal and bleed again at the slightest word."
+      display: "{{GameOfThrones.quote()}}"
+      description: "Generate random quote from Game of Thrones. (More here: https://en.wikipedia.org/wiki/Game_of_Thrones)"
+
+    - name: "{{Hacker.abbreviation()}}"
+      enabled: true
+      usage: "{{Hacker.abbreviation()}}"
+      examples: "XSS"
+      display: "{{Hacker.abbreviation()}}"
+      description: "Generate random hacker abbreviation."
+
+    - name: "{{Hacker.adjective()}}"
+      enabled: true
+      usage: "{{Hacker.adjective()}}"
+      examples: "redundant"
+      display: "{{Hacker.adjective()}}"
+      description: "Generate random hacker adjective."
+
+    - name: "{{Hacker.ingverb()}}"
+      enabled: true
+      usage: "{{Hacker.ingverb()}}"
+      examples: "hacking"
+      display: "{{Hacker.ingverb()}}"
+      description: "Generate random hacker ing verb."
+
+    - name: "{{Hacker.noun()}}"
+      enabled: true
+      usage: "{{Hacker.noun()}}"
+      examples: "firewall"
+      display: "{{Hacker.noun()}}"
+      description: "Generate random hacker noun"
+
+    - name: "{{Hacker.verb()}}"
+      enabled: true
+      usage: "{{Hacker.verb()}}"
+      examples: "calculate"
+      display: "{{Hacker.verb()}}"
+      description: "Generate random hacker verb"
+
+    - name: "{{HarryPotter.book()}}"
+      enabled: true
+      usage: "{{HarryPotter.book()}}"
+      examples: "Harry Potter and the Half-Blood Prince"
+      display: "{{HarryPotter.book()}}"
+      description: "Generate random book about Harry Potter. (More here: https://en.wikipedia.org/wiki/Harry_Potter)"
+
+    - name: "{{HarryPotter.character()}}"
+      enabled: true
+      usage: "{{HarryPotter.character()}}"
+      examples: "Roger Davies"
+      display: "{{HarryPotter.character()}}"
+      description: "Generate random character from Harry Potter. (More here: https://en.wikipedia.org/wiki/Harry_Potter)"
+
+    - name: "{{HarryPotter.house()}}"
+      enabled: true
+      usage: "{{HarryPotter.house()}}"
+      examples: "Ravenclaw"
+      display: "{{HarryPotter.house()}}"
+      description: "Generate random house from Harry Potter. (More here: https://en.wikipedia.org/wiki/Harry_Potter)"
+
+    - name: "{{HarryPotter.location()}}"
+      enabled: true
+      usage: "{{HarryPotter.location()}}"
+      examples: "Sinner's End"
+      display: "{{HarryPotter.location()}}"
+      description: "Generate random location from Harry Potter. (More here: https://en.wikipedia.org/wiki/Harry_Potter)"
+
+    - name: "{{HarryPotter.quote()}}"
+      enabled: true
+      usage: "{{HarryPotter.quote()}}"
+      examples: "There are some things you can't share without ending up liking each other and knocking out a twelve-foot mountain troll is one of them."
+      display: "{{HarryPotter.quote()}}"
+      description: "Generate random quote from Harry Potter. (More here: https://en.wikipedia.org/wiki/Harry_Potter)"
+
+    - name: "{{HarryPotter.spell()}}"
+      enabled: true
+      usage: "{{HarryPotter.spell()}}"
+      examples: "Alohomora"
+      display: "{{HarryPotter.spell()}}"
+      description: "Generate random spell from Harry Potter. (More here: https://en.wikipedia.org/wiki/Harry_Potter)"
+
+    - name: "{{Hipster.word()}}"
+      enabled: true
+      usage: "{{Hipster.word()}}"
+      examples: "hella"
+      display: "{{Hipster.word()}}"
+      description: "Generate random hipster word."
+
+    - name: "{{HitchhikersGuideToTheGalaxy.character()}}"
+      enabled: true
+      usage: "{{HitchhikersGuideToTheGalaxy.character()}}"
+      examples: "Prostetnic Vogon Kwaltz"
+      display: "{{HitchhikersGuideToTheGalaxy.character()}}"
+      description: "Generate random character from Hitch hikers Guide to Galaxy. (More here: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)"
+
+    - name: "{{HitchhikersGuideToTheGalaxy.location()}}"
+      enabled: true
+      usage: "{{HitchhikersGuideToTheGalaxy.location()}}"
+      examples: "Belgium"
+      display: "{{HitchhikersGuideToTheGalaxy.location()}}"
+      description: "Generate random location from Hitch hikers Guide to Galaxy. (More here: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)"
+
+    - name: "{{HitchhikersGuideToTheGalaxy.marvinQuote()}}"
+      enabled: true
+      usage: "{{HitchhikersGuideToTheGalaxy.marvinQuote()}}"
+      examples: "Pardon me for breathing which I never do anyway so I don't know why I bother to say it Oh God I'm so depressed."
+      display: "{{HitchhikersGuideToTheGalaxy.marvinQuote()}}"
+      description: "Generate random marvin quote from Hitch hikers Guide to Galaxy. (More here: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)"
+
+    - name: "{{HitchhikersGuideToTheGalaxy.planet()}}"
+      enabled: true
+      usage: "{{HitchhikersGuideToTheGalaxy.planet()}}"
+      examples: "Jaglan Beta"
+      display: "{{HitchhikersGuideToTheGalaxy.planet()}}"
+      description: "Generate random planet from Hitch hikers Guide to Galaxy. (More here: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)"
+
+    - name: "{{HitchhikersGuideToTheGalaxy.quote()}}"
+      enabled: true
+      usage: "{{HitchhikersGuideToTheGalaxy.quote()}}"
+      examples: "Evolution? they said to themselves Who needs it?"
+      display: "{{HitchhikersGuideToTheGalaxy.quote()}}"
+      description: "Generate random quote from Hitch hikers Guide to Galaxy. (More here: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)"
+
+    - name: "{{HitchhikersGuideToTheGalaxy.specie()}}"
+      enabled: true
+      usage: "{{HitchhikersGuideToTheGalaxy.specie()}}"
+      examples: "Silver Tongued Devils"
+      display: "{{HitchhikersGuideToTheGalaxy.specie()}}"
+      description: "Generate random specie from Hitch hikers Guide to Galaxy. (More here: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)"
+
+    - name: "{{HitchhikersGuideToTheGalaxy.starship()}}"
+      enabled: true
+      usage: "{{HitchhikersGuideToTheGalaxy.starship()}}"
+      examples: "Krikkit One"
+      display: "{{HitchhikersGuideToTheGalaxy.starship()}}"
+      description: "Generate random star ship from Hitch hikers Guide to Galaxy. (More here: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy)"
+
+    - name: "{{Hobbit.character()}}"
+      enabled: true
+      usage: "{{Hobbit.character()}}"
+      examples: "Bard the Bowman"
+      display: "{{Hobbit.character()}}"
+      description: "Generate random character from Hobbit. (More here: https://en.wikipedia.org/wiki/Hobbit)"
+
+    - name: "{{Hobbit.location()}}"
+      enabled: true
+      usage: "{{Hobbit.location()}}"
+      examples: "Mount Gram"
+      display: "{{Hobbit.location()}}"
+      description: "Generate random location from Hobbit. (More here: https://en.wikipedia.org/wiki/Hobbit)"
+
+    - name: "{{Hobbit.quote()}}"
+      enabled: true
+      usage: "{{Hobbit.quote()}}"
+      examples: "Never laugh at live dragons Bilbo you fool!"
+      display: "{{Hobbit.quote()}}"
+      description: "Generate random quote from Hobbit. (More here: https://en.wikipedia.org/wiki/Hobbit)"
+
+    - name: "{{Hobbit.thorinsCompany()}}"
+      enabled: true
+      usage: "{{Hobbit.thorinsCompany()}}"
+      examples: "Ori"
+      display: "{{Hobbit.thorinsCompany()}}"
+      description: "Generate random thorin's company from Hobbit. (More here: https://en.wikipedia.org/wiki/Hobbit)"
+
+    - name: "{{HowIMetYourMother.catchPhrase()}}"
+      enabled: true
+      usage: "{{HowIMetYourMother.catchPhrase()}}"
+      examples: "Classic Shmosby"
+      display: "{{HowIMetYourMother.catchPhrase()}}"
+      description: "Generate random catch phrase from How I Met Your Mother. (More here: https://en.wikipedia.org/wiki/How_I_Met_Your_Mother)"
+
+    - name: "{{HowIMetYourMother.character()}}"
+      enabled: true
+      usage: "{{HowIMetYourMother.character()}}"
+      examples: "Hammond Druthers"
+      display: "{{HowIMetYourMother.character()}}"
+      description: "Generate random character from How I Met Your Mother. (More here: https://en.wikipedia.org/wiki/How_I_Met_Your_Mother)"
+
+    - name: "{{HowIMetYourMother.highFive()}}"
+      enabled: true
+      usage: "{{HowIMetYourMother.highFive()}}"
+      examples: "Almighty Five"
+      display: "{{HowIMetYourMother.highFive()}}"
+      description: "Generate random high five from How I Met Your Mother. (More here: https://en.wikipedia.org/wiki/How_I_Met_Your_Mother)"
+
+    - name: "{{HowIMetYourMother.quote()}}"
+      enabled: true
+      usage: "{{HowIMetYourMother.quote()}}"
+      examples: "Whenever I’m sad I stop being sad and be awesome instead."
+      display: "{{HowIMetYourMother.quote()}}"
+      description: "Generate random quote from How I Met Your Mother. (More here: https://en.wikipedia.org/wiki/How_I_Met_Your_Mother)"
+
+    - name: "{{IdNumber.invalid()}}"
+      enabled: true
+      usage: "{{IdNumber.invalid()}}"
+      examples: "950-00-6067"
+      display: "{{IdNumber.invalid()}}"
+      description: "Generate random invalid id number."
+
+    - name: "{{IdNumber.invalidSvSeSsn()}}"
+      enabled: true
+      usage: "{{IdNumber.invalidSvSeSsn()}}"
+      examples: "546917+7288"
+      display: "{{IdNumber.invalidSvSeSsn()}}"
+      description: "Generate random invalid SvSeSsn."
+
+    - name: "{{IdNumber.ssnValid()}}"
+      enabled: true
+      usage: "{{IdNumber.ssnValid()}}"
+      examples: "169-84-7444"
+      display: "{{IdNumber.ssnValid()}}"
+      description: "Generate random valid SSN."
+
+    - name: "{{IdNumber.valid()}}"
+      enabled: true
+      usage: "{{IdNumber.valid()}}"
+      examples: "449-36-1386"
+      display: "{{IdNumber.valid()}}"
+      description: "Generate random valid id number."
+
+    - name: "{{IdNumber.validSvSeSsn()}}"
+      enabled: true
+      usage: "{{IdNumber.validSvSeSsn()}}"
+      examples: "380105+0117"
+      display: "{{IdNumber.validSvSeSsn()}}"
+      description: "Generate random valid SvSeSsn."
+
+    - name: "{{Internet.avatar()}}"
+      enabled: true
+      usage: "{{Internet.avatar()}}"
+      examples: "https://s3.amazonaws.com/uifaces/faces/twitter/karolkrakowiak_/128.jpg"
+      display: "{{Internet.avatar()}}"
+      description: "Generate random internet avatar."
+
+    - name: "{{Internet.domainName()}}"
+      enabled: true
+      usage: "{{Internet.domainName()}}"
+      examples: "toy.co"
+      display: "{{Internet.domainName()}}"
+      description: "Generate random domain name."
+
+    - name: "{{Internet.domainSuffix()}}"
+      enabled: true
+      usage: "{{Internet.domainSuffix()}}"
+      examples: "com"
+      display: "{{Internet.domainSuffix()}}"
+      description: "Generate random domain suffix."
+
+    - name: "{{Internet.domainWord()}}"
+      enabled: true
+      usage: "{{Internet.domainWord()}}"
+      examples: "hoeger"
+      display: "{{Internet.domainWord()}}"
+      description: "Generate random domain word."
+
+    - name: "{{Internet.emailAddress()}}"
+      enabled: true
+      usage: "{{Internet.emailAddress()}}"
+      examples: "faustino.jerde@yahoo.com"
+      display: "{{Internet.emailAddress()}}"
+      description: "Generate random email address."
+
+    - name: "{{Internet.emailAddress(string)}}"
+      enabled: true
+      usage: "{{Internet.emailAddress('noah.zboncak')}}"
+      examples: "noah.zboncak@gmail.com"
+      display: "{{Internet.emailAddress(localPart: string)}}"
+      description: "Generate random email address based on localPart(type: string) passed."
+
+    - name: "{{Internet.image()}}"
+      enabled: true
+      usage: "{{Internet.image()}}"
+      examples: "http://lorempixel.com/1600/1200/animals/"
+      display: "{{Internet.image()}}"
+      description: "Generate random image."
+
+    - name: "{{Internet.image(integer,integer,boolean,string)}}"
+      enabled: true
+      usage: "{{Internet.image(100100false'image')}}"
+      examples: "http://lorempixel.com/1600/1200/animals/"
+      display: "{{Internet.image(width: int,height: int,gray: boolean,text: string)}}"
+      description: "Generate random image based on width(type: int) height(type: int) gray(type: boolean) and text(type: string) passed."
+
+    - name: "{{Internet.ipV4Address()}}"
+      enabled: true
+      usage: "{{Internet.ipV4Address()}}"
+      examples: "239.63.62.28"
+      display: "{{Internet.ipV4Address()}}"
+      description: "Generate random IPV4 address."
+
+    - name: "{{Internet.ipV4Cidr()}}"
+      enabled: true
+      usage: "{{Internet.ipV4Cidr()}}"
+      examples: "73.207.240.13/10"
+      display: "{{Internet.ipV4Cidr()}}"
+      description: "Generate random IPV4 CIDR."
+
+    - name: "{{Internet.ipV6Address()}}"
+      enabled: true
+      usage: "{{Internet.ipV6Address()}}"
+      examples: "7b3c:4ce6:6eee:bb69:5652:9918:c467:7ece"
+      display: "{{Internet.ipV6Address()}}"
+      description: "Generate random IPV6 address."
+
+    - name: "{{Internet.ipV6Cidr()}}"
+      enabled: true
+      usage: "{{Internet.ipV6Cidr()}}"
+      examples: "29cd:0e11:48f6:f3ce:d866:5c2c:8ba3:8371/98"
+      display: "{{Internet.ipV6Cidr()}}"
+      description: "Generate random IPV6 CIDR."
+
+    - name: "{{Internet.macAddress()}}"
+      enabled: true
+      usage: "{{Internet.macAddress()}}"
+      examples: "8d:92:68:79:c5:6d"
+      display: "{{Internet.macAddress()}}"
+      description: "Generate random mac address."
+
+    - name: "{{Internet.macAddress(string)}}"
+      enabled: true
+      usage: "{{Internet.macAddress('8d:92')}}"
+      examples: "8d:92:68:79:c5:6d"
+      display: "{{Internet.macAddress(prefix: string)}}"
+      description: "Generate random mac address based on prefix(type: string) passed."
+
+    - name: "{{Internet.password()}}"
+      enabled: true
+      usage: "{{Internet.password()}}"
+      examples: "t26w314r5fh56"
+      display: "{{Internet.password()}}"
+      description: "Generate random password."
+
+    - name: "{{Internet.password(boolean)}}"
+      enabled: true
+      usage: "{{Internet.password(true)}}"
+      examples: "t26w314r5fh56"
+      display: "{{Internet.password(includeDigit: boolean)}}"
+      description: "Generate random password based on includeDigit(type: boolean) passed."
+
+    - name: "{{Internet.password(int,int)}}"
+      enabled: true
+      usage: "{{Internet.password(10,15)}}"
+      examples: "t26w314r5fh56"
+      display: "{{Internet.password(minimumLength: int,maximumLength: int)}}"
+      description: "Generate random password based on minimumLength(type: int) and maximumLength(type: int) passed."
+
+    - name: "{{Internet.password(int,int,boolean)}}"
+      enabled: true
+      usage: "{{Internet.password(10,15,true)}}"
+      examples: "t26w314r5fh56"
+      display: "{{Internet.password(minimumLength: int,maximumLength: int,includeUppercase: boolean)}}"
+      description: "Generate random password based on minimumLength(type: int) maximumLength(type: int) and includeUppercase(type: boolean) passed."
+
+    - name: "{{Internet.password(int,int,boolean,boolean)}}"
+      enabled: true
+      usage: "{{Internet.password(10,15,true,true)}}"
+      examples: "t26w314r5fh56"
+      display: "{{Internet.password(minimumLength: int,maximumLength: int,includeUppercase: boolean,includeSpecial: boolean)}}"
+      description: "Generate random password based on minimumLength(type: int) maximumLength(type: int) includeUppercase(type: boolean) and includeSpecial(type: boolean) passed."
+
+    - name: "{{Internet.password(int,int,boolean,boolean,boolean)}}"
+      enabled: true
+      usage: "{{Internet.password(10,15,true,true,true)}}"
+      examples: "t26w314r5fh56"
+      display: "{{Internet.password(minimumLength: int,maximumLength: int,includeUppercase: boolean,includeSpecial: boolean,includeDigit: boolean)}}"
+      description: "Generate random password based on minimumLength(type: int) maximumLength(type: int) includeUppercase(type: boolean) includeSpecial(type: boolean) and includeDigit(type: boolean) passed."
+
+    - name: "{{Internet.privateIpV4Address()}}"
+      enabled: true
+      usage: "{{Internet.privateIpV4Address()}}"
+      examples: "172.27.190.193"
+      display: "{{Internet.privateIpV4Address()}}"
+      description: "Generate random private IPV4 address."
+
+    - name: "{{Internet.publicIpV4Address()}}"
+      enabled: true
+      usage: "{{Internet.publicIpV4Address()}}"
+      examples: "17.168.185.73"
+      display: "{{Internet.publicIpV4Address()}}"
+      description: "Generate random public IPV4 address."
+
+    - name: "{{Internet.safeEmailAddress()}}"
+      enabled: true
+      usage: "{{Internet.safeEmailAddress()}}"
+      examples: "bette.stamm@example.com"
+      display: "{{Internet.safeEmailAddress()}}"
+      description: "Generate random safe email."
+
+    - name: "{{Internet.safeEmailAddress(string)}}"
+      enabled: true
+      usage: "{{Internet.safeEmailAddress('angella.wilkinson')}}"
+      examples: "angella.wilkinson@example.com"
+      display: "{{Internet.safeEmailAddress(localPart: string)}}"
+      description: "Generate random safe email based on localPart(type: string) passed."
+
+    - name: "{{Internet.slug()}}"
+      enabled: true
+      usage: "{{Internet.slug()}}"
+      examples: "et_eum"
+      display: "{{Internet.slug()}}"
+      description: "Generate random slug."
+
+    - name: "{{Internet.slug(list,string)}}"
+      enabled: false
+      usage: "{{Internet.slug(['my''slug']'-')}}"
+      examples: "my-slug"
+      display: "{{Internet.slug(words: [],glue: string)}}"
+      description: "Generate random slug based on words(type: list) and glue(type: string) passed."
+
+    - name: "{{Internet.url()}}"
+      enabled: true
+      usage: "{{Internet.url()}}"
+      examples: "www.otelia-frami.io"
+      display: "{{Internet.url()}}"
+      description: "Generate random url."
+
+    - name: "{{Internet.userAgentAny()}}"
+      enabled: true
+      usage: "{{Internet.userAgentAny()}}"
+      examples: "Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.0; Windows NT 5.1; .NET CLR 1.1.4322)"
+      display: "{{Internet.userAgentAny()}}"
+      description: "Generate random user agent."
+
+    - name: "{{Internet.uuid()}}"
+      enabled: true
+      usage: "{{Internet.uuid()}}"
+      examples: "28b7b432-6281-4005-9b2d-7e291484fa61"
+      display: "{{Internet.uuid()}}"
+      description: "Generate random UUID."
+
+    - name: "{{Job.field()}}"
+      enabled: true
+      usage: "{{Job.field()}}"
+      examples: "Administration"
+      display: "{{Job.field()}}"
+      description: "Generate random field of job."
+
+    - name: "{{Job.keySkills()}}"
+      enabled: true
+      usage: "{{Job.keySkills()}}"
+      examples: "Leadership"
+      display: "{{Job.keySkills()}}"
+      description: "Generate random key skills for a job."
+
+    - name: "{{Job.position()}}"
+      enabled: true
+      usage: "{{Job.position()}}"
+      examples: "Producer"
+      display: "{{Job.position()}}"
+      description: "Generate random job position."
+
+    - name: "{{Job.seniority()}}"
+      enabled: true
+      usage: "{{Job.seniority()}}"
+      examples: "Human"
+      display: "{{Job.seniority()}}"
+      description: "Generate random jon seniority."
+
+    - name: "{{Job.title()}}"
+      enabled: true
+      usage: "{{Job.title()}}"
+      examples: "International Manufacturing Developer"
+      display: "{{Job.title()}}"
+      description: "Generate random job title."
+
+    - name: "{{LeagueOfLegends.champion()}}"
+      enabled: true
+      usage: "{{LeagueOfLegends.champion()}}"
+      examples: "Elise"
+      display: "{{LeagueOfLegends.champion()}}"
+      description: "Generate random champion from League of Legends. (More here: https://en.wikipedia.org/wiki/League_of_Legends)"
+
+    - name: "{{LeagueOfLegends.location()}}"
+      enabled: true
+      usage: "{{LeagueOfLegends.location()}}"
+      examples: "Shadow Isles"
+      display: "{{LeagueOfLegends.location()}}"
+      description: "Generate random location from League of Legends. (More here: https://en.wikipedia.org/wiki/League_of_Legends)"
+
+    - name: "{{LeagueOfLegends.masteries()}}"
+      enabled: true
+      usage: "{{LeagueOfLegends.masteries()}}"
+      examples: "Greenfather's Gift"
+      display: "{{LeagueOfLegends.masteries()}}"
+      description: "Generate random masteries from League of Legends. (More here: https://en.wikipedia.org/wiki/League_of_Legends)"
+
+    - name: "{{LeagueOfLegends.quote()}}"
+      enabled: true
+      usage: "{{LeagueOfLegends.quote()}}"
+      examples: "Tonight we hunt!"
+      display: "{{LeagueOfLegends.quote()}}"
+      description: "Generate random quote from League of Legends. (More here: https://en.wikipedia.org/wiki/League_of_Legends)"
+
+    - name: "{{LeagueOfLegends.rank()}}"
+      enabled: true
+      usage: "{{LeagueOfLegends.rank()}}"
+      examples: "Silver III"
+      display: "{{LeagueOfLegends.rank()}}"
+      description: "Generate random rank from League of Legends. (More here: https://en.wikipedia.org/wiki/League_of_Legends)"
+
+    - name: "{{LeagueOfLegends.summonerSpell()}}"
+      enabled: true
+      usage: "{{LeagueOfLegends.summonerSpell()}}"
+      examples: "Ghost"
+      display: "{{LeagueOfLegends.summonerSpell()}}"
+      description: "Generate random summoner spell from League of Legends. (More here: https://en.wikipedia.org/wiki/League_of_Legends)"
+
+    - name: "{{Lebowski.actor()}}"
+      enabled: true
+      usage: "{{Lebowski.actor()}}"
+      examples: "John Goodman"
+      display: "{{Lebowski.actor()}}"
+      description: "Generate random actor from The Big Lebowski. (More here: https://en.wikipedia.org/wiki/The_Big_Lebowski)"
+
+    - name: "{{Lebowski.character()}}"
+      enabled: true
+      usage: "{{Lebowski.character()}}"
+      examples: "Bunny Lebowski"
+      display: "{{Lebowski.character()}}"
+      description: "Generate random character from The Big Lebowski. (More here: https://en.wikipedia.org/wiki/The_Big_Lebowski)"
+
+    - name: "{{Lebowski.quote()}}"
+      enabled: true
+      usage: "{{Lebowski.quote()}}"
+      examples: "Is this your homework Larry?"
+      display: "{{Lebowski.quote()}}"
+      description: "Generate random quote from The Big Lebowski. (More here: https://en.wikipedia.org/wiki/The_Big_Lebowski)"
+
+    - name: "{{LordOfTheRings.character()}}"
+      enabled: true
+      usage: "{{LordOfTheRings.character()}}"
+      examples: "Beregond"
+      display: "{{LordOfTheRings.character()}}"
+      description: "Generate random character from The Lord of the Rings. (More here: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings)"
+
+    - name: "{{LordOfTheRings.location()}}"
+      enabled: true
+      usage: "{{LordOfTheRings.location()}}"
+      examples: "Rivendell"
+      display: "{{LordOfTheRings.location()}}"
+      description: "Generate random location from The Lord of the Rings. (More here: https://en.wikipedia.org/wiki/The_Lord_of_the_Rings)"
+
+    - name: "{{Lorem.character()}}"
+      enabled: true
+      usage: "{{Lorem.character()}}"
+      examples: "r"
+      display: "{{Lorem.character()}}"
+      description: "Generate random character"
+
+    - name: "{{Lorem.character(boolean)}}"
+      enabled: true
+      usage: "{{Lorem.character(true)}}"
+      examples: "A"
+      display: "{{Lorem.character(includeUppercase: boolean)}}"
+      description: "Generate random character based on includeUppercase(type: boolean) passed."
+
+    - name: "{{Lorem.characters()}}"
+      enabled: true
+      usage: "{{Lorem.characters()}}"
+      examples: "asxsEEFCaas"
+      display: "{{Lorem.characters()}}"
+      description: "Generate random characters"
+
+    - name: "{{Lorem.characters(boolean)}}"
+      enabled: true
+      usage: "{{Lorem.characters(true)}}"
+      examples: "ASXSWXSS"
+      display: "{{Lorem.characters(includeUppercase: boolean)}}"
+      description: "Generate random characters based on includeUppercase(type: boolean) passed."
+
+    - name: "{{Lorem.characters(int)}}"
+      enabled: true
+      usage: "{{Lorem.characters(10)}}"
+      examples: "i800kfbahs"
+      display: "{{Lorem.characters(fixedNumberOfCharacters: int)}}"
+      description: "Generate random characters based on fixedNumberOfCharacters(type: int) passed."
+
+    - name: "{{Lorem.characters(int,boolean)}}"
+      enabled: true
+      usage: "{{Lorem.characters(10,false)}}"
+      examples: "i800kfbahs"
+      display: "{{Lorem.characters(fixedNumberOfCharacters: int,includeUppercase: boolean)}}"
+      description: "Generate random characters based on fixedNumberOfCharacters(type: int) and includeUppercase(type: boolean) passed."
+
+    - name: "{{Lorem.characters(int,boolean,boolean)}}"
+      enabled: true
+      usage: "{{Lorem.characters(50,true,true)}}"
+      examples: "ee89s3ff3rif27ba31b8j4ih1qm52cfoy132i7rlbi0lfe00nk"
+      display: "{{Lorem.characters(fixedNumberOfCharacters: int,includeUppercase: boolean,includeDigit: boolean)}}"
+      description: "Generate random characters based on fixedNumberOfCharacters(type: int) includeUppercase(type: boolean) and includeDigit(type: boolean) passed."
+
+    - name: "{{Lorem.characters(int,int)}}"
+      enabled: true
+      usage: "{{Lorem.characters(10,10)}}"
+      examples: "i800kfbahs"
+      display: "{{Lorem.characters(minimumLength: int,maximumLength: int)}}"
+      description: "Generate random characters based on minimumLength(type: int) and maximumLength(type: int) passed."
+
+    - name: "{{Lorem.characters(int,int,boolean)}}"
+      enabled: true
+      usage: "{{Lorem.characters(50,50,false)}}"
+      examples: "ee89s3ff3rif27ba31b8j4ih1qm52cfoy132i7rlbi0lfe00nk"
+      display: "{{Lorem.characters(minimumLength: int,maximumLength: int,includeUppercase: boolean)}}"
+      description: "Generate random characters based on minimumLength(type: int) maximumLength(type: int) and includeUppercase(type: boolean) passed."
+
+    - name: "{{Lorem.characters(int,int,boolean,boolean)}}"
+      enabled: true
+      usage: "{{Lorem.characters(50,50,false,true)}}"
+      examples: "kmdjfctryx4lmen08orxkyefhvezdorlfeyma8cdc1vikx53wq"
+      display: "{{Lorem.characters(minimumLength: int,maximumLength: int,includeUppercase: boolean,includeDigit: boolean)}}"
+      description: "Generate random characters based on minimumLength(type: int) maximumLength(type: int) includeUppercase(type: boolean) and includeDigit(type: boolean) passed."
+
+    - name: "{{Lorem.fixedString(int)}}"
+      enabled: true
+      usage: "{{Lorem.fixedString(31)}}"
+      examples: "Id numquam libero sit it vitae."
+      display: "{{Lorem.fixedString(numberOfLetters: int)}}"
+      description: "Generate random fixed string based on numberOfLetters(type: int) passed."
+
+    - name: "{{Lorem.paragraph()}}"
+      enabled: true
+      usage: "{{Lorem.paragraph()}}"
+      examples: "Vel sit ipsum non sed officiis. Officia odit necessitatibus. Quo eum non enim."
+      display: "{{Lorem.paragraph()}}"
+      description: "Generate random paragraph."
+
+    - name: "{{Lorem.paragraph(int)}}"
+      enabled: true
+      usage: "{{Lorem.paragraph(1)}}"
+      examples: "Porro quis illum non numquam cupiditate esse dolorem. Omnis dolor iure. Reprehenderit reiciendis quidem quae reiciendis facilis."
+      display: "{{Lorem.paragraph(paragraphCount: int)}}"
+      description: "Generate random paragraph based on paragraphCount(type: int) passed."
+
+    - name: "{{Lorem.sentence()}}"
+      enabled: true
+      usage: "{{Lorem.sentence()}}"
+      examples: "Minima aliquam ut impedit saepe."
+      display: "{{Lorem.sentence()}}"
+      description: "Generate random sentence."
+
+    - name: "{{Lorem.sentence(int)}}"
+      enabled: true
+      usage: "{{Lorem.sentence(4)}}"
+      examples: "Incidunt iure dolorum excepturi."
+      display: "{{Lorem.sentence(wordCount: int)}}"
+      description: "Generate random sentence based on wordCount(type: int) passed."
+
+    - name: "{{Lorem.sentence(int,int)}}"
+      enabled: true
+      usage: "{{Lorem.sentence(3,5)}}"
+      examples: "Aliquam ea autem."
+      display: "{{Lorem.sentence(wordCount: int,randomWordsToAdd: int)}}"
+      description: "Generate random sentence based on wordCount(type: int) and randomWordsToAdd(type: int) passed."
+
+    - name: "{{Lorem.word()}}"
+      enabled: true
+      usage: "{{Lorem.word()}}"
+      examples: "eligendi"
+      display: "{{Lorem.word()}}"
+      description: "Generate random word."
+
+    - name: "{{Matz.quote()}}"
+      enabled: true
+      usage: "{{Matz.quote()}}"
+      examples: "You want to enjoy life don't you? If you get your job done quickly and your job is fun that's good isn't it? That's the purpose of life partly. Your life is better."
+      display: "{{Matz.quote()}}"
+      description: "Generate random quote from Yukihiro Matsumoto. (More here: https://en.wikipedia.org/wiki/Yukihiro_Matsumoto)"
+
+    - name: "{{Medical.diseaseName()}}"
+      enabled: true
+      usage: "{{Medical.diseaseName()}}"
+      examples: "Hyperkalemia"
+      display: "{{Medical.diseaseName()}}"
+      description: "Generate random disease name."
+
+    - name: "{{Medical.hospitalName()}}"
+      enabled: true
+      usage: "{{Medical.hospitalName()}}"
+      examples: "ASANTE THREE RIVERS MEDICAL CENTER"
+      display: "{{Medical.hospitalName()}}"
+      description: "Generate random name of a hospital."
+
+    - name: "{{Medical.medicineName()}}"
+      enabled: true
+      usage: "{{Medical.medicineName()}}"
+      examples: "KLEBSIELLA PNEUMONIAE"
+      display: "{{Medical.medicineName()}}"
+      description: "Generate random medicine name."
+
+    - name: "{{Medical.symptoms()}}"
+      enabled: true
+      usage: "{{Medical.symptoms()}}"
+      examples: "Neck ache or pain"
+      display: "{{Medical.symptoms()}}"
+      description: "Generate random medical symptoms."
+
+    - name: "{{Music.chord()}}"
+      enabled: true
+      usage: "{{Music.chord()}}"
+      examples: "Cb7"
+      display: "{{Music.chord()}}"
+      description: "Generate random music chord."
+
+    - name: "{{Music.genre()}}"
+      enabled: true
+      usage: "{{Music.genre()}}"
+      examples: "Pop"
+      display: "{{Music.genre()}}"
+      description: "Generate random music genre."
+
+    - name: "{{Music.instrument()}}"
+      enabled: true
+      usage: "{{Music.instrument()}}"
+      examples: "Clarinet"
+      display: "{{Music.instrument()}}"
+      description: "Generate random music instrument."
+
+    - name: "{{Music.key()}}"
+      enabled: true
+      usage: "{{Music.key()}}"
+      examples: "B#"
+      display: "{{Music.key()}}"
+      description: "Generate random music key."
+
+    - name: "{{Name.bloodGroup()}}"
+      enabled: true
+      usage: "{{Name.bloodGroup()}}"
+      examples: "A-"
+      display: "{{Name.bloodGroup()}}"
+      description: "Generate random blood group."
+
+    - name: "{{Name.firstName()}}"
+      enabled: true
+      usage: "{{Name.firstName()}}"
+      examples: "Renna"
+      display: "{{Name.firstName()}}"
+      description: "Generate random first name."
+
+    - name: "{{Name.fullName()}}"
+      enabled: true
+      usage: "{{Name.fullName()}}"
+      examples: "Jermaine Jones IV"
+      display: "{{Name.fullName()}}"
+      description: "Generate random full name."
+
+    - name: "{{Name.lastName()}}"
+      enabled: true
+      usage: "{{Name.lastName()}}"
+      examples: "Ziemann"
+      display: "{{Name.lastName()}}"
+      description: "Generate random last name."
+
+    - name: "{{Name.name()}}"
+      enabled: true
+      usage: "{{Name.name()}}"
+      examples: "Belinda Klein"
+      display: "{{Name.name()}}"
+      description: "Generate random name."
+
+    - name: "{{Name.nameWithMiddle()}}"
+      enabled: true
+      usage: "{{Name.nameWithMiddle()}}"
+      examples: "Larhonda Schamberger Beatty Sr."
+      display: "{{Name.nameWithMiddle()}}"
+      description: "Generate random name with middle."
+
+    - name: "{{Name.prefix()}}"
+      enabled: true
+      usage: "{{Name.prefix()}}"
+      examples: "Mrs."
+      display: "{{Name.prefix()}}"
+      description: "Generate random prefix for a name."
+
+    - name: "{{Name.suffix()}}"
+      enabled: true
+      usage: "{{Name.suffix()}}"
+      examples: "DVM"
+      display: "{{Name.suffix()}}"
+      description: "Generate random suffix for a name."
+
+    - name: "{{Name.title()}}"
+      enabled: true
+      usage: "{{Name.title()}}"
+      examples: "Dynamic Accountability Planner"
+      display: "{{Name.title()}}"
+      description: "Generate random title for a name."
+
+    - name: "{{Name.username()}}"
+      enabled: true
+      usage: "{{Name.username()}}"
+      examples: "miquel.blanda"
+      display: "{{Name.username()}}"
+      description: "Generate random username for a name."
+
+    - name: "{{Nation.capitalCity()}}"
+      enabled: true
+      usage: "{{Nation.capitalCity()}}"
+      examples: "Dushanbe"
+      display: "{{Nation.capitalCity()}}"
+      description: "Generate random capital city of a nation."
+
+    - name: "{{Nation.flag()}}"
+      enabled: true
+      usage: "{{Nation.flag()}}"
+      examples: "🇹🇷"
+      display: "{{Nation.flag()}}"
+      description: "Generate random flag of a nation."
+
+    - name: "{{Nation.language()}}"
+      enabled: true
+      usage: "{{Nation.language()}}"
+      examples: "Portuguese"
+      display: "{{Nation.language()}}"
+      description: "Generate random language of a nation."
+
+    - name: "{{Nation.nationality()}}"
+      enabled: true
+      usage: "{{Nation.nationality()}}"
+      examples: "Colombians"
+      display: "{{Nation.nationality()}}"
+      description: "Generate random nationality of a nation."
+
+    - name: "{{Number.digit()}}"
+      enabled: true
+      usage: "{{Number.digit()}}"
+      examples: "6"
+      display: "{{Number.digit()}}"
+      description: "Generate random digit."
+
+    - name: "{{Number.digits(int)}}"
+      enabled: true
+      usage: "{{Number.digits(2)}}"
+      examples: "25"
+      display: "{{Number.digits(count: int)}}"
+      description: "Generate random digit based on count(type: int) passed."
+
+    - name: "{{Number.numberBetween(int,int)}}"
+      enabled: true
+      usage: "{{Number.numberBetween(10,20)}}"
+      examples: "15"
+      display: "{{Number.numberBetween(min: int,max: int)}}"
+      description: "Generate random number between min(type: int) and max(type: int) passed."
+
+    - name: "{{Number.numberBetween(long,long)}}"
+      enabled: true
+      usage: "{{Number.numberBetween(985745365,985745999)}}"
+      examples: "985745885"
+      display: "{{Number.numberBetween(min: long,max: long)}}"
+      description: "Generate random number between min(type: long) and max(type: long) passed."
+
+    - name: "{{Number.randomDigit()}}"
+      enabled: true
+      usage: "{{Number.randomDigit()}}"
+      examples: "7"
+      display: "{{Number.randomDigit()}}"
+      description: "Generate random digit."
+
+    - name: "{{Number.randomDigitNotZero()}}"
+      enabled: true
+      usage: "{{Number.randomDigitNotZero()}}"
+      examples: "5"
+      display: "{{Number.randomDigitNotZero()}}"
+      description: "Generate random non zero digit."
+
+    - name: "{{Number.randomDouble(int,int,int)}}"
+      enabled: true
+      usage: "{{Number.randomDouble(1,25,32)}}"
+      examples: "31.0"
+      display: "{{Number.randomDouble(maxNumberOfDecimals: int,min: int,max: int)}}"
+      description: "Generate random double based on maxNumberOfDecimals(type: int) min(type: int) and max(type: int) passed."
+
+    - name: "{{Number.randomDouble(int,long,long)}}"
+      enabled: true
+      usage: "{{Number.randomDouble(2,58476699,58479999)}}"
+      examples: "58477855.11"
+      display: "{{Number.randomDouble(maxNumberOfDecimals: int,min: long,max: long)}}"
+      description: "Generate random double based on maxNumberOfDecimals(type: int) min(type: long) and max(type: long) passed."
+
+    - name: "{{Number.randomNumber()}}"
+      enabled: true
+      usage: "{{Number.randomNumber()}}"
+      examples: "7"
+      display: "{{Number.randomNumber()}}"
+      description: "Generate random number."
+
+    - name: "{{Number.randomNumber(int,boolean)}}"
+      enabled: true
+      usage: "{{Number.randomNumber(5,true)}}"
+      examples: "54958"
+      display: "{{Number.randomNumber(numberOfDigits: int,strict: boolean)}}"
+      description: "Generate random number based on numberOfDigits(type: int) and strict(type: boolean) passed."
+
+    - name: "{{Overwatch.hero()}}"
+      enabled: true
+      usage: "{{Overwatch.hero()}}"
+      examples: "Hanzo"
+      display: "{{Overwatch.hero()}}"
+      description: "Generate random hero from OverWatch. (More here: https://en.wikipedia.org/wiki/Overwatch_(video_game))"
+
+    - name: "{{Overwatch.location()}}"
+      enabled: true
+      usage: "{{Overwatch.location()}}"
+      examples: "King's Row"
+      display: "{{Overwatch.location()}}"
+      description: "Generate random location from OverWatch. (More here: https://en.wikipedia.org/wiki/Overwatch_(video_game))"
+
+    - name: "{{Overwatch.quote()}}"
+      enabled: true
+      usage: "{{Overwatch.quote()}}"
+      examples: "Vamos esculachar!"
+      display: "{{Overwatch.quote()}}"
+      description: "Generate random quote from OverWatch. (More here: https://en.wikipedia.org/wiki/Overwatch_(video_game))"
+
+    - name: "{{PhoneNumber.cellPhone()}}"
+      enabled: true
+      usage: "{{PhoneNumber.cellPhone()}}"
+      examples: "(093) 060-5085"
+      display: "{{PhoneNumber.cellPhone()}}"
+      description: "Generate random cell phone number."
+
+    - name: "{{PhoneNumber.extension()}}"
+      enabled: true
+      usage: "{{PhoneNumber.extension()}}"
+      examples: "5972"
+      display: "{{PhoneNumber.extension()}}"
+      description: "Generate random extension for a phone number."
+
+    - name: "{{PhoneNumber.phoneNumber()}}"
+      enabled: true
+      usage: "{{PhoneNumber.phoneNumber()}}"
+      examples: "619-481-2784 x46357"
+      display: "{{PhoneNumber.phoneNumber()}}"
+      description: "Generate random phone number."
+
+    - name: "{{PhoneNumber.subscriberNumber()}}"
+      enabled: true
+      usage: "{{PhoneNumber.subscriberNumber()}}"
+      examples: "7941"
+      display: "{{PhoneNumber.subscriberNumber()}}"
+      description: "Generate random subscriber number."
+
+    - name: "{{PhoneNumber.subscriberNumber(int)}}"
+      enabled: true
+      usage: "{{PhoneNumber.subscriberNumber(4)}}"
+      examples: "7164"
+      display: "{{PhoneNumber.subscriberNumber(length: int)}}"
+      description: "Generate random subscriber number based on length(type: int) passed."
+
+    - name: "{{Pokemon.location()}}"
+      enabled: true
+      usage: "{{Pokemon.location()}}"
+      examples: "Lilycove City"
+      display: "{{Pokemon.location()}}"
+      description: "Generate random location of a Pokemon."
+
+    - name: "{{Pokemon.name()}}"
+      enabled: true
+      usage: "{{Pokemon.name()}}"
+      examples: "Golduck"
+      display: "{{Pokemon.name()}}"
+      description: "Generate random name of a Pokemon."
+
+    - name: "{{PrincessBride.character()}}"
+      enabled: true
+      usage: "{{PrincessBride.character()}}"
+      examples: "Inigo Montoya"
+      display: "{{PrincessBride.character()}}"
+      description: "Generate random character from The Princess Bride. (More here: https://en.wikipedia.org/wiki/The_Princess_Bride_(film))"
+
+    - name: "{{PrincessBride.quote()}}"
+      enabled: true
+      usage: "{{PrincessBride.quote()}}"
+      examples: "Have fun storming the castle!"
+      display: "{{PrincessBride.quote()}}"
+      description: "Generate random quote from The Princess Bride. (More here: https://en.wikipedia.org/wiki/The_Princess_Bride_(film))"
+
+    - name: "{{ProgrammingLanguage.creator()}}"
+      enabled: true
+      usage: "{{ProgrammingLanguage.creator()}}"
+      examples: "Bjarne Stroustrup"
+      display: "{{ProgrammingLanguage.creator()}}"
+      description: "Generate random creator of a programming language."
+
+    - name: "{{ProgrammingLanguage.name()}}"
+      enabled: true
+      usage: "{{ProgrammingLanguage.name()}}"
+      examples: "Java"
+      display: "{{ProgrammingLanguage.name()}}"
+      description: "Generate random name of a programming language."
+
+    - name: "{{Relationships.any()}}"
+      enabled: true
+      usage: "{{Relationships.any()}}"
+      examples: "Brother"
+      display: "{{Relationships.any()}}"
+      description: "Generate any random relationship."
+
+    - name: "{{Relationships.direct()}}"
+      enabled: true
+      usage: "{{Relationships.direct()}}"
+      examples: "Father"
+      display: "{{Relationships.direct()}}"
+      description: "Generate random direct relationship."
+
+    - name: "{{Relationships.extended()}}"
+      enabled: true
+      usage: "{{Relationships.extended()}}"
+      examples: "Granddaughter"
+      display: "{{Relationships.extended()}}"
+      description: "Generate random extended relationship."
+
+    - name: "{{Relationships.inLaw()}}"
+      enabled: true
+      usage: "{{Relationships.inLaw()}}"
+      examples: "Mother-in-law"
+      display: "{{Relationships.inLaw()}}"
+      description: "Generate random inLaw relationship."
+
+    - name: "{{Relationships.parent()}}"
+      enabled: true
+      usage: "{{Relationships.parent()}}"
+      examples: "Mother"
+      display: "{{Relationships.parent()}}"
+      description: "Generate random parent relationship."
+
+    - name: "{{Relationships.sibling()}}"
+      enabled: true
+      usage: "{{Relationships.sibling()}}"
+      examples: "Sister"
+      display: "{{Relationships.sibling()}}"
+      description: "Generate random sibling relationship."
+
+    - name: "{{Relationships.spouse()}}"
+      enabled: true
+      usage: "{{Relationships.spouse()}}"
+      examples: "Husband"
+      display: "{{Relationships.spouse()}}"
+      description: "Generate random spouse relationship."
+
+    - name: "{{RickAndMorty.character()}}"
+      enabled: true
+      usage: "{{RickAndMorty.character()}}"
+      examples: "Tinkles"
+      display: "{{RickAndMorty.character()}}"
+      description: "Generate random character from Rick and Morty. (More here: https://en.wikipedia.org/wiki/Rick_and_Morty)"
+
+    - name: "{{RickAndMorty.location()}}"
+      enabled: true
+      usage: "{{RickAndMorty.location()}}"
+      examples: "Dimension C-132"
+      display: "{{RickAndMorty.location()}}"
+      description: "Generate random location from Rick and Morty. (More here: https://en.wikipedia.org/wiki/Rick_and_Morty)"
+
+    - name: "{{RickAndMorty.quote()}}"
+      enabled: true
+      usage: "{{RickAndMorty.quote()}}"
+      examples: "Yo! What up my glip glops!"
+      display: "{{RickAndMorty.quote()}}"
+      description: "Generate random quote from Rick and Morty. (More here: https://en.wikipedia.org/wiki/Rick_and_Morty)"
+
+    - name: "{{Robin.quote()}}"
+      enabled: true
+      usage: "{{Robin.quote()}}"
+      examples: "Holy Incantation"
+      display: "{{Robin.quote()}}"
+      description: "Generate random quote from Robin. (More here: https://en.wikipedia.org/wiki/Robin_(character))"
+
+    - name: "{{RockBand.name()}}"
+      enabled: true
+      usage: "{{RockBand.name()}}"
+      examples: "Harold Melvin and the Blue Notes"
+      display: "{{RockBand.name()}}"
+      description: "Generate random name of a Rock band."
+
+    - name: "{{Shakespeare.asYouLikeItQuote()}}"
+      enabled: true
+      usage: "{{Shakespeare.asYouLikeItQuote()}}"
+      examples: "The fool doth think he is wise but the wise man knows himself to be a fool."
+      display: "{{Shakespeare.asYouLikeItQuote()}}"
+      description: "Generate random as you like it quote from Shakespeare."
+
+    - name: "{{Shakespeare.hamletQuote()}}"
+      enabled: true
+      usage: "{{Shakespeare.hamletQuote()}}"
+      examples: "When sorrows come they come not single spies but in battalions."
+      display: "{{Shakespeare.hamletQuote()}}"
+      description: "Generate random hamlet quote from Shakespeare."
+
+    - name: "{{Shakespeare.kingRichardIIIQuote()}}"
+      enabled: true
+      usage: "{{Shakespeare.kingRichardIIIQuote()}}"
+      examples: "So wise so young they say do never live long."
+      display: "{{Shakespeare.kingRichardIIIQuote()}}"
+      description: "Generate random king richard III quote from Shakespeare."
+
+    - name: "{{Shakespeare.romeoAndJulietQuote()}}"
+      enabled: true
+      usage: "{{Shakespeare.romeoAndJulietQuote()}}"
+      examples: "O! she doth teach the torches to burn bright."
+      display: "{{Shakespeare.romeoAndJulietQuote()}}"
+      description: "Generate random romeo and juliet quote from Shakespeare."
+
+    - name: "{{SlackEmoji.activity()}}"
+      enabled: true
+      usage: "{{SlackEmoji.activity()}}"
+      examples: ":ski:"
+      display: "{{SlackEmoji.activity()}}"
+      description: "Generate random activity emoji for Slack."
+
+    - name: "{{SlackEmoji.celebration()}}"
+      enabled: true
+      usage: "{{SlackEmoji.celebration()}}"
+      examples: ":gift:"
+      display: "{{SlackEmoji.celebration()}}"
+      description: "Generate random celebration emoji for Slack."
+
+    - name: "{{SlackEmoji.custom()}}"
+      enabled: true
+      usage: "{{SlackEmoji.custom()}}"
+      examples: ":cubimal_chick:"
+      display: "{{SlackEmoji.custom()}}"
+      description: "Generate random custom emoji for Slack."
+
+    - name: "{{SlackEmoji.emoji()}}"
+      enabled: true
+      usage: "{{SlackEmoji.emoji()}}"
+      examples: ":dango:"
+      display: "{{SlackEmoji.emoji()}}"
+      description: "Generate random emoji for Slack."
+
+    - name: "{{SlackEmoji.foodAndDrink()}}"
+      enabled: true
+      usage: "{{SlackEmoji.foodAndDrink()}}"
+      examples: ":cocktail:"
+      display: "{{SlackEmoji.foodAndDrink()}}"
+      description: "Generate random food and drink emoji for Slack."
+
+    - name: "{{SlackEmoji.nature()}}"
+      enabled: true
+      usage: "{{SlackEmoji.nature()}}"
+      examples: ":fallen_leaf:"
+      display: "{{SlackEmoji.nature()}}"
+      description: "Generate random nature emoji for Slack."
+
+    - name: "{{SlackEmoji.objectsAndSymbols()}}"
+      enabled: true
+      usage: "{{SlackEmoji.objectsAndSymbols()}}"
+      examples: ":chart_with_downwards_trend:"
+      display: "{{SlackEmoji.objectsAndSymbols()}}"
+      description: "Generate random object and symbol emoji for Slack."
+
+    - name: "{{SlackEmoji.people()}}"
+      enabled: true
+      usage: "{{SlackEmoji.people()}}"
+      examples: ":person_with_pouting_face:"
+      display: "{{SlackEmoji.people()}}"
+      description: "Generate random people emoji for Slack."
+
+    - name: "{{SlackEmoji.travelAndPlaces()}}"
+      enabled: true
+      usage: "{{SlackEmoji.travelAndPlaces()}}"
+      examples: ":aerial_tramway:"
+      display: "{{SlackEmoji.travelAndPlaces()}}"
+      description: "Generate random travel and places emoji for Slack."
+
+    - name: "{{Space.agency()}}"
+      enabled: true
+      usage: "{{Space.agency()}}"
+      examples: "German Aerospace Center"
+      display: "{{Space.agency()}}"
+      description: "Generate random agency for Space."
+
+    - name: "{{Space.agencyAbbreviation()}}"
+      enabled: true
+      usage: "{{Space.agencyAbbreviation()}}"
+      examples: "SNSB"
+      display: "{{Space.agencyAbbreviation()}}"
+      description: "Generate random agency abbreviation for Space."
+
+    - name: "{{Space.company()}}"
+      enabled: true
+      usage: "{{Space.company()}}"
+      examples: "SpaceX"
+      display: "{{Space.company()}}"
+      description: "Generate random company for Space."
+
+    - name: "{{Space.constellation()}}"
+      enabled: true
+      usage: "{{Space.constellation()}}"
+      examples: "Sagittarius"
+      display: "{{Space.constellation()}}"
+      description: "Generate random constellation from Space. (More here: https://en.wikipedia.org/wiki/Constellation)"
+
+    - name: "{{Space.distanceMeasurement()}}"
+      enabled: true
+      usage: "{{Space.distanceMeasurement()}}"
+      examples: "78AU"
+      display: "{{Space.distanceMeasurement()}}"
+      description: "Generate random distance measurement from Space."
+
+    - name: "{{Space.galaxy()}}"
+      enabled: true
+      usage: "{{Space.galaxy()}}"
+      examples: "Triangulum"
+      display: "{{Space.galaxy()}}"
+      description: "Generate random galaxy from Space. (More here: https://en.wikipedia.org/wiki/Galaxy)"
+
+    - name: "{{Space.meteorite()}}"
+      enabled: true
+      usage: "{{Space.meteorite()}}"
+      examples: "Twannberg"
+      display: "{{Space.meteorite()}}"
+      description: "Generate random meteorite from Space. (More here: https://en.wikipedia.org/wiki/Meteorite)"
+
+    - name: "{{Space.moon()}}"
+      enabled: true
+      usage: "{{Space.moon()}}"
+      examples: "Callisto"
+      display: "{{Space.moon()}}"
+      description: "Generate random moon from Space. (More here: https://en.wikipedia.org/wiki/Moon)"
+
+    - name: "{{Space.nasaSpaceCraft()}}"
+      enabled: true
+      usage: "{{Space.nasaSpaceCraft()}}"
+      examples: "Mercury"
+      display: "{{Space.nasaSpaceCraft()}}"
+      description: "Generate random NASA spacecraft from Space. (More here: https://en.wikipedia.org/wiki/Spacecraft)"
+
+    - name: "{{Space.nebula()}}"
+      enabled: true
+      usage: "{{Space.nebula()}}"
+      examples: "Bodes Nebula"
+      display: "{{Space.nebula()}}"
+      description: "Generate random nebula from Space. (More here: https://en.wikipedia.org/wiki/Nebula)"
+
+    - name: "{{Space.planet()}}"
+      enabled: true
+      usage: "{{Space.planet()}}"
+      examples: "Jupiter"
+      display: "{{Space.planet()}}"
+      description: "Generate random planet from Space. (More here: https://en.wikipedia.org/wiki/Planet)"
+
+    - name: "{{Space.star()}}"
+      enabled: true
+      usage: "{{Space.star()}}"
+      examples: "Rigil Kentaurus"
+      display: "{{Space.star()}}"
+      description: "Generate random star from Space. (More here: https://en.wikipedia.org/wiki/Star)"
+
+    - name: "{{Space.starCluster()}}"
+      enabled: true
+      usage: "{{Space.starCluster()}}"
+      examples: "Arp-Madore 1"
+      display: "{{Space.starCluster()}}"
+      description: "Generate random star cluster from Space. (More here: https://en.wikipedia.org/wiki/Star_cluster)"
+
+    - name: "{{StarTrek.character()}}"
+      enabled: true
+      usage: "{{StarTrek.character()}}"
+      examples: "The Doctor"
+      display: "{{StarTrek.character()}}"
+      description: "Generate random character from StarTrek. (More here: https://en.wikipedia.org/wiki/Star_Trek)"
+
+    - name: "{{StarTrek.location()}}"
+      enabled: true
+      usage: "{{StarTrek.location()}}"
+      examples: "Ferenginar"
+      display: "{{StarTrek.location()}}"
+      description: "Generate random location from StarTrek. (More here: https://en.wikipedia.org/wiki/Star_Trek)"
+
+    - name: "{{StarTrek.specie()}}"
+      enabled: true
+      usage: "{{StarTrek.specie()}}"
+      examples: "Vorta"
+      display: "{{StarTrek.specie()}}"
+      description: "Generate random specie from StarTrek. (More here: https://en.wikipedia.org/wiki/Star_Trek)"
+
+    - name: "{{StarTrek.villain()}}"
+      enabled: true
+      usage: "{{StarTrek.villain()}}"
+      examples: "Kruge"
+      display: "{{StarTrek.villain()}}"
+      description: "Generate random villain from StarTrek. (More here: https://en.wikipedia.org/wiki/Star_Trek)"
+
+    - name: "{{Stock.nsdqSymbol()}}"
+      enabled: true
+      usage: "{{Stock.nsdqSymbol()}}"
+      examples: "MBII"
+      display: "{{Stock.nsdqSymbol()}}"
+      description: "Generate random nsdq stock symbol. (More here: https://en.wikipedia.org/wiki/NASDAQ)"
+
+    - name: "{{Stock.nyseSymbol()}}"
+      enabled: true
+      usage: "{{Stock.nyseSymbol()}}"
+      examples: "ZBK"
+      display: "{{Stock.nyseSymbol()}}"
+      description: "Generate random nyse stock symbol. (More here: https://en.wikipedia.org/wiki/New_York_Stock_Exchange)"
+
+    - name: "{{Superhero.descriptor()}}"
+      enabled: true
+      usage: "{{Superhero.descriptor()}}"
+      examples: "Deathlok"
+      display: "{{Superhero.descriptor()}}"
+      description: "Generate random descriptor for a Superhero. (More here: https://en.wikipedia.org/wiki/Superhero)"
+
+    - name: "{{Superhero.name()}}"
+      enabled: true
+      usage: "{{Superhero.name()}}"
+      examples: "Zoom Lord"
+      display: "{{Superhero.name()}}"
+      description: "Generate random name for a Superhero. (More here: https://en.wikipedia.org/wiki/Superhero)"
+
+    - name: "{{Superhero.power()}}"
+      enabled: true
+      usage: "{{Superhero.power()}}"
+      examples: "Power Cosmic"
+      display: "{{Superhero.power()}}"
+      description: "Generate random power for a Superhero. (More here: https://en.wikipedia.org/wiki/Superhero)"
+
+    - name: "{{Superhero.prefix()}}"
+      enabled: true
+      usage: "{{Superhero.prefix()}}"
+      examples: "Magnificent"
+      display: "{{Superhero.prefix()}}"
+      description: "Generate random prefix for a Superhero. (More here: https://en.wikipedia.org/wiki/Superhero)"
+
+    - name: "{{Superhero.suffix()}}"
+      enabled: true
+      usage: "{{Superhero.suffix()}}"
+      examples: "Man"
+      display: "{{Superhero.suffix()}}"
+      description: "Generate random suffix for a Superhero. (More here: https://en.wikipedia.org/wiki/Superhero)"
+
+    - name: "{{Team.creature()}}"
+      enabled: true
+      usage: "{{Team.creature()}}"
+      examples: "werewolves"
+      display: "{{Team.creature()}}"
+      description: "Generate random creature for a team."
+
+    - name: "{{Team.name()}}"
+      enabled: true
+      usage: "{{Team.name()}}"
+      examples: "Massachusetts zebras"
+      display: "{{Team.name()}}"
+      description: "Generate random name for a team."
+
+    - name: "{{Team.sport()}}"
+      enabled: true
+      usage: "{{Team.sport()}}"
+      examples: "hockey"
+      display: "{{Team.sport()}}"
+      description: "Generate random sport for a team."
+
+    - name: "{{Team.state()}}"
+      enabled: true
+      usage: "{{Team.state()}}"
+      examples: "Kentucky"
+      display: "{{Team.state()}}"
+      description: "Generate random state for a team."
+
+    - name: "{{TwinPeaks.character()}}"
+      enabled: true
+      usage: "{{TwinPeaks.character()}}"
+      examples: "Phillip Gerard"
+      display: "{{TwinPeaks.character()}}"
+      description: "Generate random character from TwinPeaks. (More here: https://en.wikipedia.org/wiki/Twin_Peaks)"
+
+    - name: "{{TwinPeaks.location()}}"
+      enabled: true
+      usage: "{{TwinPeaks.location()}}"
+      examples: "Ghostwood National Forest"
+      display: "{{TwinPeaks.location()}}"
+      description: "Generate random location from TwinPeaks. (More here: https://en.wikipedia.org/wiki/Twin_Peaks)"
+
+    - name: "{{TwinPeaks.quote()}}"
+      enabled: true
+      usage: "{{TwinPeaks.quote()}}"
+      examples: "She's dead... Wrapped in plastic."
+      display: "{{TwinPeaks.quote()}}"
+      description: "Generate random quote from TwinPeaks. (More here: https://en.wikipedia.org/wiki/Twin_Peaks)"
+
+    - name: "{{University.name()}}"
+      enabled: true
+      usage: "{{University.name()}}"
+      examples: "North Virginia Institute"
+      display: "{{University.name()}}"
+      description: "Generate random name for the university."
+
+    - name: "{{University.prefix()}}"
+      enabled: true
+      usage: "{{University.prefix()}}"
+      examples: "East"
+      display: "{{University.prefix()}}"
+      description: "Generate random prefix for the university."
+
+    - name: "{{University.suffix()}}"
+      enabled: true
+      usage: "{{University.suffix()}}"
+      examples: "Institute"
+      display: "{{University.suffix()}}"
+      description: "Generate random suffix for the university."
+
+    - name: "{{Weather.description()}}"
+      enabled: true
+      usage: "{{Weather.description()}}"
+      examples: "Thunder falls"
+      display: "{{Weather.description()}}"
+      description: "Generate random description of the weather."
+
+    - name: "{{Weather.temperatureCelsius()}}"
+      enabled: true
+      usage: "{{Weather.temperatureCelsius()}}"
+      examples: "12°C"
+      display: "{{Weather.temperatureCelsius()}}"
+      description: "Generate random temperature in celsius."
+
+    - name: "{{Weather.temperatureCelsius(int,int)}}"
+      enabled: true
+      usage: "{{Weather.temperatureCelsius(48,55)}}"
+      examples: "52°C"
+      display: "{{Weather.temperatureCelsius(minTemperature: int,maxTemperature: int)}}"
+      description: "Generate temperature in celsius based on minTemperature(type: int) and maxTemperature(type: int) passed."
+
+    - name: "{{Weather.temperatureFahrenheit()}}"
+      enabled: true
+      usage: "{{Weather.temperatureFahrenheit()}}"
+      examples: "17°F"
+      display: "{{Weather.temperatureFahrenheit()}}"
+      description: "Generate random temperature in fahrenheit."
+
+    - name: "{{Weather.temperatureFahrenheit(int,int)}}"
+      enabled: true
+      usage: "{{Weather.temperatureFahrenheit(48,65)}}"
+      examples: "57°F"
+      display: "{{Weather.temperatureFahrenheit(minTemperature: int,maxTemperature: int)}}"
+      description: "Generate temperature in fahrenheit based on minTemperature(type: int) and maxTemperature(type: int) passed."
+
+    - name: "{{Witcher.character()}}"
+      enabled: true
+      usage: "{{Witcher.character()}}"
+      examples: "Shani"
+      display: "{{Witcher.character()}}"
+      description: "Generate random character from Witcher. (More here: https://en.wikipedia.org/wiki/The_Witcher)"
+
+    - name: "{{Witcher.location()}}"
+      enabled: true
+      usage: "{{Witcher.location()}}"
+      examples: "Anchor"
+      display: "{{Witcher.location()}}"
+      description: "Generate random location from Witcher. (More here: https://en.wikipedia.org/wiki/The_Witcher)"
+
+    - name: "{{Witcher.monster()}}"
+      enabled: true
+      usage: "{{Witcher.monster()}}"
+      examples: "Slyzard"
+      display: "{{Witcher.monster()}}"
+      description: "Generate random monster from Witcher. (More here: https://en.wikipedia.org/wiki/The_Witcher)"
+
+    - name: "{{Witcher.quote()}}"
+      enabled: true
+      usage: "{{Witcher.quote()}}"
+      examples: "You get what you get and be happy with it"
+      display: "{{Witcher.quote()}}"
+      description: "Generate random quote from Witcher. (More here: https://en.wikipedia.org/wiki/The_Witcher)"
+
+    - name: "{{Witcher.school()}}"
+      enabled: true
+      usage: "{{Witcher.school()}}"
+      examples: "Bear"
+      display: "{{Witcher.school()}}"
+      description: "Generate random school from Witcher. (More here: https://en.wikipedia.org/wiki/The_Witcher)"
+
+    - name: "{{Witcher.witcher()}}"
+      enabled: true
+      usage: "{{Witcher.witcher()}}"
+      examples: "George of Kagen"
+      display: "{{Witcher.witcher()}}"
+      description: "Generate random witcher from Witcher. (More here: https://en.wikipedia.org/wiki/The_Witcher)"
+
+    - name: "{{Yoda.quote()}}"
+      enabled: true
+      usage: "{{Yoda.quote()}}"
+      examples: "Already know you that which you need."
+      display: "{{Yoda.quote()}}"
+      description: "Generate random quote from Yoda. (More here: https://en.wikipedia.org/wiki/Yoda)"
+
+    - name: "{{Zelda.character()}}"
+      enabled: true
+      usage: "{{Zelda.character()}}"
+      examples: "Ocarina of Time"
+      display: "{{Zelda.character()}}"
+      description: "Generate random character from Zelda.(More here: https://en.wikipedia.org/wiki/The_Legend_of_Zelda)"
+
+    - name: "{{Zelda.game()}}"
+      enabled: true
+      usage: "{{Zelda.game()}}"
+      examples: "Trissa"
+      display: "{{Zelda.game()}}"
+      description: "Generate random game from Zelda.(More here: https://en.wikipedia.org/wiki/The_Legend_of_Zelda)"

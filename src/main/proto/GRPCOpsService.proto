@@ -1,0 +1,90 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.github.requestbin.grpc.services;
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/empty.proto";
+
+service GRPCOpsService {
+  rpc unaryGet(OpsGetRequest) returns (OpsGetResponse) {};
+  rpc unaryPost(OpsPostRequest) returns (OpsPostResponse) {};
+  rpc unaryPut(OpsPutRequest) returns (OpsPutResponse) {};
+  rpc unaryList(OpsListRequest) returns (OpsListResponse) {};
+  rpc unaryPatch(OpsPatchRequest) returns (OpsPatchResponse) {};
+  rpc unaryDelete(OpsDeleteRequest) returns (OpsDeleteResponse) {};
+  rpc streamGet(stream OpsGetRequest) returns (stream OpsGetResponse) {};
+  rpc streamPost(stream OpsPostRequest) returns (stream OpsPostResponse) {};
+  rpc streamPut(stream OpsPutRequest) returns (stream OpsPutResponse) {};
+  rpc streamList(stream OpsListRequest) returns (stream OpsListResponse) {};
+  rpc streamPatch(stream OpsPatchRequest) returns (stream OpsPatchResponse) {};
+  rpc streamDelete(stream OpsDeleteRequest) returns (stream OpsDeleteResponse) {};
+}
+
+message OpsGetRequest {
+  string bin = 1;
+  string identifier = 2;
+}
+
+message OpsGetResponse {
+  map<string, google.protobuf.Value> payload = 1;
+}
+
+message OpsPostRequest {
+  string bin = 1;
+  map<string, google.protobuf.Value> payload = 2;
+}
+
+message OpsPostResponse {
+  map<string, google.protobuf.Value> payload = 1;
+}
+
+message OpsPutRequest {
+  string bin = 1;
+  string identifier = 2;
+  map<string, google.protobuf.Value> payload = 3;
+}
+
+message OpsPutResponse {
+  map<string, google.protobuf.Value> payload = 1;
+}
+
+message OpsListRequest {
+  string bin = 1;
+  int32 page = 2;
+  int32 limit = 3;
+}
+
+message Content {
+  map<string, google.protobuf.Value> payload = 1;
+}
+
+message OpsListResponse {
+  repeated Content contents = 1;
+  int32 currentPage = 2;
+  int32 numberOfElements = 3;
+  int64 totalElements = 4;
+  int64 totalPages = 5;
+  string first = 6;
+  string last = 7;
+  string empty = 8;
+}
+
+message OpsPatchRequest {
+  string bin = 1;
+  string identifier = 2;
+  map<string, google.protobuf.Value> payload = 3;
+}
+
+message OpsPatchResponse {
+  map<string, google.protobuf.Value> payload = 1;
+}
+
+message OpsDeleteRequest {
+  string bin = 1;
+  string identifier = 2;
+}
+
+message OpsDeleteResponse {
+  google.protobuf.Empty payload = 1;
+}
+
