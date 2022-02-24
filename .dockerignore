@@ -1,0 +1,7 @@
+.github
+.idea
+
+target/*
+Dockerfile
+*.md
+*.iml
