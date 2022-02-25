@@ -22,16 +22,17 @@
         <jmockit.version>1.45</jmockit.version>
         <jacoco.version>0.8.3</jacoco.version>
         <skip.jacoco>false</skip.jacoco>
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>3.0.0</swagger.version>
         <sonar.exclusions>
             **/ApplicationMain.*,**/ApplicationConfig.*,**/LoggingAspect.*,**/LogThis.*
         </sonar.exclusions>
         <lombok.version>1.18.16</lombok.version>
-        <common-lang.version>3.11</common-lang.version>
+        <common-lang.version>3.12.0</common-lang.version>
         <faker.version>1.0.2</faker.version>
-        <grpc.spring.starter.version>2.10.1.RELEASE</grpc.spring.starter.version>
+        <grpc.spring.starter.version>2.13.0.RELEASE</grpc.spring.starter.version>
         <grpc.build.extension.version>1.6.1</grpc.build.extension.version>
         <grpc.plugin.version>0.6.1</grpc.plugin.version>
+        <protocCommand>protoc</protocCommand>
     </properties>
 
     <dependencies>
@@ -94,14 +95,14 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <version>7.5</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.jmockit</groupId>
             <artifactId>jmockit</artifactId>
-            <version>1.45</version>
+            <version>1.49</version>
         </dependency>
 
         <dependency>
@@ -127,6 +128,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${common-lang.version}</version>
@@ -141,6 +148,18 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>1.44.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>1.44.1</version>
         </dependency>
 
         <!-- For both -->
@@ -215,7 +234,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.github.requestbin.ApplicationMain</mainClass>
+                            <mainClass>com.github.request.bin.ApplicationMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -227,11 +246,11 @@
                 <version>${grpc.plugin.version}</version>
                 <configuration>
                     <protocArtifact>
-                        com.google.protobuf:protoc:3.3.0:exe:${os.detected.classifier}
+                        com.google.protobuf:protoc:3.17.3:exe:${os.detected.classifier}
                     </protocArtifact>
                     <pluginId>grpc-java</pluginId>
                     <pluginArtifact>
-                        io.grpc:protoc-gen-grpc-java:1.4.0:exe:${os.detected.classifier}
+                        io.grpc:protoc-gen-grpc-java:1.44.1:exe:${os.detected.classifier}
                     </pluginArtifact>
                 </configuration>
                 <executions>
