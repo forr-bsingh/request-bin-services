@@ -36,5 +36,5 @@ jobs:
         name: build the image
         run: |
           docker buildx build --push \
-            --tag ${{ secrets/DOCKER_ACCOUNT }}/request-bin-services:latest \
+            --tag ${{ secrets.DOCKER_ACCOUNT }}/request-bin-services:latest \
             --platform linux/amd64,linux/arm64 .
