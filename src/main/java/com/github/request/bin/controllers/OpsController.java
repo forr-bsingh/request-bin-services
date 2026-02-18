@@ -4,9 +4,9 @@ import com.github.request.bin.data.Ops;
 import com.github.request.bin.exception.DataNotFoundException;
 import com.github.request.bin.services.OpsService;
 import com.github.request.bin.utils.LogThis;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,10 +29,10 @@ public class OpsController {
     private OpsService opsService;
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Post to bin")
+    @Operation(summary = "Post to bin", description = "Endpoint: Post to bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Success response", response = Ops.class),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "201", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(value = HttpStatus.CREATED)
@@ -55,10 +55,10 @@ public class OpsController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Delete from bin")
+    @Operation(summary = "Delete from bin", description = "Endpoint: Delete from bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 204, message = "Success response"),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "204", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @DeleteMapping(value = "/{identifier}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
@@ -80,10 +80,10 @@ public class OpsController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: List from bin")
+    @Operation(summary = "List from bin", description = "Endpoint: List from bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response"),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public Page<Map<String, Object>> list(@PathVariable String name,
@@ -105,10 +105,10 @@ public class OpsController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Get from bin")
+    @Operation(summary = "Get from bin", description = "Endpoint: Get from bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response", response = Ops.class),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @GetMapping(value = "/{identifier}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Object> get(@PathVariable String name,
@@ -130,10 +130,10 @@ public class OpsController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Put to bin")
+    @Operation(summary = "Put to bin", description = "Endpoint: Put to bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response", response = Ops.class),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @PutMapping(value = "/{identifier}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Object> put(@PathVariable String name,
@@ -157,10 +157,10 @@ public class OpsController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Patch in bin")
+    @Operation(summary = "Patch in bin", description = "Endpoint: Patch in bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response", response = Ops.class),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @PatchMapping(value = "/{identifier}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Object> patch(@PathVariable String name,

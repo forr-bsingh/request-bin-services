@@ -2,9 +2,9 @@ package com.github.request.bin.controllers;
 
 import com.github.request.bin.services.PingService;
 import com.github.request.bin.utils.LogThis;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -20,10 +20,10 @@ public class PingController {
     private PingService pingService;
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: PING")
+    @Operation(summary = "PING", description = "Endpoint: PING")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response", response = String.class),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @GetMapping(value = "/ping")
     public String ping() {

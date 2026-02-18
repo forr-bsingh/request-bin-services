@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <version>3.5.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.github</groupId>
@@ -15,21 +15,19 @@
     <description>Request Bin Services</description>
 
     <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+        <java.version>17</java.version>
+        <spring-cloud.version>2024.0.0</spring-cloud.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <jmockit.version>1.45</jmockit.version>
-        <jacoco.version>0.8.3</jacoco.version>
+        <jacoco.version>0.8.11</jacoco.version>
         <skip.jacoco>false</skip.jacoco>
-        <swagger.version>3.0.0</swagger.version>
         <sonar.exclusions>
             **/ApplicationMain.*,**/ApplicationConfig.*,**/LoggingAspect.*,**/LogThis.*
         </sonar.exclusions>
-        <lombok.version>1.18.16</lombok.version>
-        <common-lang.version>3.12.0</common-lang.version>
+        <lombok.version>1.18.30</lombok.version>
+        <common-lang.version>3.14.0</common-lang.version>
         <faker.version>1.0.2</faker.version>
-        <grpc.spring.starter.version>2.13.0.RELEASE</grpc.spring.starter.version>
+        <grpc.spring.starter.version>3.1.0.RELEASE</grpc.spring.starter.version>
         <grpc.build.extension.version>1.6.1</grpc.build.extension.version>
         <grpc.plugin.version>0.6.1</grpc.plugin.version>
         <protocCommand>protoc</protocCommand>
@@ -69,10 +67,6 @@
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
                 </exclusion>
-                <exclusion>
-                    <groupId>org.mockito</groupId>
-                    <artifactId>mockito-core</artifactId>
-                </exclusion>
             </exclusions>
         </dependency>
 
@@ -95,14 +89,8 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.7.0</version>
+            <version>7.9.0</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jmockit</groupId>
-            <artifactId>jmockit</artifactId>
-            <version>1.49</version>
         </dependency>
 
         <dependency>
@@ -116,21 +104,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.6.6</version>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.3.0</version>
         </dependency>
 
         <dependency>
@@ -153,13 +129,19 @@
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-stub</artifactId>
-            <version>1.44.1</version>
+            <version>1.62.2</version>
         </dependency>
 
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-protobuf</artifactId>
-            <version>1.44.1</version>
+            <version>1.62.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
         </dependency>
 
         <!-- For both -->
@@ -185,13 +167,6 @@
                     <artifactId>grpc-netty-shaded</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>net.devh</groupId>
-            <artifactId>grpc-client-spring-boot-autoconfigure</artifactId>
-            <version>${grpc.spring.starter.version}</version>
-            <type>pom</type>
         </dependency>
     </dependencies>
 
@@ -246,11 +221,11 @@
                 <version>${grpc.plugin.version}</version>
                 <configuration>
                     <protocArtifact>
-                        com.google.protobuf:protoc:3.17.3:exe:${os.detected.classifier}
+                        com.google.protobuf:protoc:3.25.1:exe:${os.detected.classifier}
                     </protocArtifact>
                     <pluginId>grpc-java</pluginId>
                     <pluginArtifact>
-                        io.grpc:protoc-gen-grpc-java:1.44.1:exe:${os.detected.classifier}
+                        io.grpc:protoc-gen-grpc-java:1.62.2:exe:${os.detected.classifier}
                     </pluginArtifact>
                 </configuration>
                 <executions>
@@ -266,7 +241,7 @@
             <!-- This plugin will copy the src/deploy directory into target/ -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.3.1</version>
                 <executions>
                     <execution>
                         <id>copy-resources</id>
@@ -290,10 +265,9 @@
 
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.21.0</version>
+                <version>3.2.5</version>
                 <configuration>
                     <argLine>
-                        -javaagent:${settings.localRepository}/org/jmockit/jmockit/${jmockit.version}/jmockit-${jmockit.version}.jar
                         -javaagent:${settings.localRepository}/org/jacoco/org.jacoco.agent/${jacoco.version}/org.jacoco.agent-${jacoco.version}-runtime.jar=destfile=${project.build.directory}/jacoco.exec
                     </argLine>
                 </configuration>

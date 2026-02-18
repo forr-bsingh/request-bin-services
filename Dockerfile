@@ -1,5 +1,5 @@
 # Setting up build env
-FROM --platform=linux/amd64 maven:3.6.3-openjdk-11-slim as builder
+FROM --platform=linux/amd64 maven:3.9.6-eclipse-temurin-17-alpine as builder
 LABEL MAINTAINER="Baljeet Singh {sharpedge2005@gmail.com}"
 
 COPY . /tmp/
@@ -9,7 +9,7 @@ WORKDIR /tmp
 RUN mvn -DskipTests=true package spring-boot:repackage
 
 # Pull base image.
-FROM openjdk:11.0.10-jre-slim
+FROM eclipse-temurin:17-jre-alpine
 LABEL MAINTAINER="Baljeet Singh {sharpedge2005@gmail.com}"
 LABEL DESC="Service layer for REQUEST-BIN"
 

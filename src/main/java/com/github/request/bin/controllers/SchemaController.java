@@ -3,9 +3,9 @@ package com.github.request.bin.controllers;
 import com.github.request.bin.data.Attribute;
 import com.github.request.bin.services.SchemaService;
 import com.github.request.bin.utils.LogThis;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,10 +26,10 @@ public class SchemaController {
     private SchemaService schemaService;
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: List all attributes to be used to define schema")
+    @Operation(summary = "List all attributes to be used to define schema", description = "Endpoint: List all attributes to be used to define schema")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response"),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @GetMapping(value = "/attributes", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Attribute> listAttributes() {
@@ -44,10 +44,10 @@ public class SchemaController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Resolve schema and generate object with dummy data.")
+    @Operation(summary = "Resolve schema and generate object with dummy data", description = "Endpoint: Resolve schema and generate object with dummy data")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response"),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @PostMapping(value = "/resolve", consumes = MediaType.APPLICATION_JSON_VALUE)
     public Map<String, Object> resolveSchema(@RequestBody Map<String, Object> schema) {

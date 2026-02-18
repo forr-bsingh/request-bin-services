@@ -5,9 +5,9 @@ import com.github.request.bin.data.Ops;
 import com.github.request.bin.services.BinService;
 import com.github.request.bin.utils.LogThis;
 import com.github.request.bin.exception.DataNotFoundException;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,10 +30,10 @@ public class BinController {
     private BinService binService;
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Create a bin")
+    @Operation(summary = "Create a bin", description = "Endpoint: Create a bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Success response", response = Bin.class),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "201", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(value = HttpStatus.CREATED)
@@ -54,10 +54,10 @@ public class BinController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Delete a bin")
+    @Operation(summary = "Delete a bin", description = "Endpoint: Delete a bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 204, message = "Success response"),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "204", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @DeleteMapping(value = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
@@ -76,10 +76,10 @@ public class BinController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: List all bins")
+    @Operation(summary = "List all bins", description = "Endpoint: List all bins")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response"),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public Page<Bin> listBins(@RequestParam(required = false, defaultValue = "1") int p,
@@ -95,10 +95,10 @@ public class BinController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Get a bin")
+    @Operation(summary = "Get a bin", description = "Endpoint: Get a bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response", response = Bin.class),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @GetMapping(value = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Bin getBin(@PathVariable String name) {
@@ -115,10 +115,10 @@ public class BinController {
     }
 
     @LogThis(details = false)
-    @ApiOperation(value = "Endpoint: Get all ops for a  bin")
+    @Operation(summary = "Get all ops for a bin", description = "Endpoint: Get all ops for a bin")
     @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Success response"),
-            @ApiResponse(code = 500, message = "Generic exception. Please notify the team.")
+            @ApiResponse(responseCode = "200", description = "Success response"),
+            @ApiResponse(responseCode = "500", description = "Generic exception. Please notify the team.")
     })
     @GetMapping(value = "/{name}/ops", produces = MediaType.APPLICATION_JSON_VALUE)
     public Page<Ops> getBinOps(@PathVariable String name, @RequestParam(required = false, defaultValue = "1") int p,
